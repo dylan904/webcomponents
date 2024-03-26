@@ -1,0 +1,10 @@
+@import './_common.css';
+
+:host(md-outlined-button), :host(bmd-outlined-button) {
+    --_outline-color: var(--blue-primary)!important;
+    --_label-text-color: var(--blue-primary)!important;
+    --_container-color: transparent!important;
+    --_hover-label-text-color: #fff!important;
+    --_hover-state-layer-color: var(--blue-5)!important;
+    --_hover-state-layer-opacity: 1!important;
+}

@@ -1,0 +1,10 @@
+@import './_common.css';
+
+:host(md-filled-button.btn--primary), :host(bmd-filled-button.btn--primary) { 
+    --_container-color: var(--button-green)!important;
+}
+  
+:host(md-filled-button.btn--danger), :host(bmd-filled-button.btn--danger) { 
+    --_container-color: var(--red-1)!important;
+    --md-focus-ring-color: rgb(225 83 97 / 50%)!important;
+}

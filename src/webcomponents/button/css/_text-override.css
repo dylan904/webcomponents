@@ -1,0 +1,20 @@
+:host(md-text-button), :host(bmd-text-button) { 
+    --_container-color: transparent!important;
+    --_leading-space: 0!important;
+    --_trailing-space: 0!important;
+    --_container-height: 15px!important;
+    --_hover-state-layer-color: transparent!important;
+    vertical-align: baseline!important;
+}
+
+:host(:hover) .label {
+    text-decoration: underline!important;
+}
+
+:host .label {
+    font-size: 14px!important;
+    color: var(--blue-40)!important;
+    line-height: normal!important;
+    transition: color 0.3s ease!important;
+    font-weight: bold;
+}

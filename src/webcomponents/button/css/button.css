@@ -1,0 +1,113 @@
+/* The colors outlined here correspond to the color palette section of the Beeline Design System: https://bln-app-beelinedesignsystem-scus.azurewebsites.net/color-palette */
+/* Green */
+/* Blue */
+/* Purple */
+/* Orange */
+/* Red */
+/* Neutral */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.btn {
+  border: 1px solid;
+  border-radius: 250px;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Lato", Arial, sans-serif;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.btn svg {
+  padding-right: 5px;
+}
+.btn:active, .btn:focus, .btn:hover {
+  background: #0352a0;
+  border-color: #0352a0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+  color: #fff;
+  outline: 0;
+}
+.btn--default {
+  background: #0573e1;
+  border: 1px solid #0573e1;
+}
+.btn--primary {
+  background: #448500;
+  border: 1px solid #448500;
+}
+.btn--primary:active, .btn--primary:focus, .btn--primary:hover {
+  background: #2a5200;
+  border-color: #2a5200;
+}
+.btn--danger {
+  background: #be3a34;
+  border: 1px solid #be3a34;
+}
+.btn--danger:active, .btn--danger:focus, .btn--danger:hover {
+  background: #962e29;
+  border-color: #962e29;
+  box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.5);
+  color: #fff;
+}
+.btn--neutral {
+  background: #fff;
+  border: 1px solid #0573e1;
+  color: #0573e1;
+}
+.btn:disabled {
+  background: #cfcfcf;
+  border-color: #cfcfcf;
+  color: #1b1b1b;
+  opacity: 0.65;
+  pointer-events: none;
+}
+.btn--small {
+  font-size: 1em;
+  padding: 5px 15px;
+}
+.btn--medium {
+  font-size: 1em;
+  padding: 10px 20px;
+}
+.btn--large {
+  font-size: 1.3em;
+  padding: 15px 30px;
+}
+.btn--link {
+  background-color: transparent;
+  border: none;
+  color: #006adc;
+  font-size: 14px;
+  padding: 0;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+.btn--link:active, .btn--link:focus, .btn--link:hover {
+  text-decoration: underline;
+  box-shadow: none;
+  background-color: transparent;
+  color: #006adc;
+}
+.btn--link:disabled {
+  cursor: auto;
+  text-decoration: none;
+  pointer-events: none;
+  opacity: 1;
+}
+.btn--link span {
+  pointer-events: none;
+}
