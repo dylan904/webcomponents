@@ -47,7 +47,7 @@
     </div>
   </template>
   <script>
-  import BButton from './BButton2.vue'
+  import BButton from './BButton.vue'
   import BCard from './BCard.vue'
   //import useFocusLock from '../composables/useFocusLock'
   import { v4 as uuid } from 'uuid'
@@ -458,4 +458,4 @@
     }
   }
 }
-</style>
+</style>./BButton.vue

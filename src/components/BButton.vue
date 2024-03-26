@@ -10,7 +10,7 @@
   <script>
   console.time('vue-button');
   export default {
-    name: 'BButton2',
+    name: 'BButton',
     props: {
       accessibilityText: {
         type: String
@@ -76,7 +76,7 @@
     cursor: pointer;
     font-family: "Lato", Arial, sans-serif;
     font-weight: bold;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease;“
   
     svg {
       padding-right: 5px;

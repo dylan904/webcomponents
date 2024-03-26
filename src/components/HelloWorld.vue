@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue';
-import BButton2 from './BButton2.vue';
+import BButton from './BButton.vue';
 import BModal from './BModal.vue'
 import MButton from './MButton-extend.vue'
 import MModal from './MModal.vue'
@@ -9,35 +9,34 @@ defineProps({
   msg: String,
 })
 
-const sizes = ['small', 'medium', 'large'];
-const showBModal = ref(false);
-const showMModal = ref(false);
-const size = ref('medium');
-const selectedValue = ref('')
+const sizes = ['small', 'medium', 'large']
+const showBModal = ref(false)
+const showMModal = ref(false)
+const size = ref('medium')
 
 const cycleSize = () => {
-  const currentIndex = sizes.indexOf(size.value);
-  const nextIndex = (currentIndex + 1) % sizes.length;
-  size.value = sizes[nextIndex];
+  const currentIndex = sizes.indexOf(size.value)
+  const nextIndex = (currentIndex + 1) % sizes.length
+  size.value = sizes[nextIndex]
 }
 
 const testButtonEvent = () => {
-  showBModal.value = !showBModal.value;
-  cycleSize();
+  showBModal.value = !showBModal.value
+  cycleSize()
 }
 
 const testLitButtonEvent = () => {
-  showMModal.value = !showMModal.value;
-  cycleSize();
+  showMModal.value = !showMModal.value
+  cycleSize()
 }
 
 </script>
 
 <template>
 
-<BButton2 :size="size" type="default" id="test" label="Vue Filled" @click="testButtonEvent" />
-<BButton2 :size="size" type="neutral" id="test" label="Vue Outlined" @click="testButtonEvent" />
-<BButton2 :size="size" type="link" id="test" label="Vue Link" @click="testButtonEvent" />
+<BButton :size="size" type="default" id="test" label="Vue Filled" @click="testButtonEvent" />
+<BButton :size="size" type="neutral" id="test" label="Vue Outlined" @click="testButtonEvent" />
+<BButton :size="size" type="link" id="test" label="Vue Link" @click="testButtonEvent" />
 
 <br/><br/>
 
