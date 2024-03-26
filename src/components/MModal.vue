@@ -26,8 +26,7 @@
         <component :is="modalComponentName" slot="actions" :method="type === 'form' ? 'form' : null">
             <md-text-button 
                 v-if="showSecondaryAction"
-                @click="emit('secondary-click')" 
-                :disabled="disableSecondaryAction">
+                @click="emit('secondary-click')" >
                 {{ secondaryActionText }}
             </md-text-button>
 
