@@ -2,17 +2,11 @@
     <bmd-modal
       :style="{ margin: 'auto', width: `${width}px`, height: `${modalHeight}px` }"
       :open="modelValue"
-      
       :id="id"
-      :type="type"
-      :role="role"
-      :showCloseButton="showCloseButton"
-      :closeOnOverlayClick="closeOnOverlayClick"
-      :closeButtonSRText="closeButtonSRText"
-      :showIcon="showIcon"
 
       @close="emit('before-close-click'); emit('update:modelValue', false)"
       @closed="emit('close-click'); emit('modal-close')"
+      @cancel="onCancel"
     >
         <!-- eslint-disable-next-line vue/no-deprecated-slot-attribute -->
         <font-awesome-icon slot="icon" 
@@ -61,6 +55,12 @@
 
     const modalComponentName = getModalType(props.type)
     const faIcon = ['fa', getIconName(props.iconType)]
+
+    const onCancel = (ev) => {  // upon escape or clicking overlay
+        if (!props.closeOnOverlayClick) {
+            ev.preventDefault();
+        }
+    }
 </script>
 
 <script>
