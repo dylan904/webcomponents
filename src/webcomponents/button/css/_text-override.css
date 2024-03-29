@@ -1,20 +1,74 @@
-:host(md-text-button), :host(bmd-text-button) { 
+:host {
     --_container-color: transparent!important;
-    --_leading-space: 0!important;
-    --_trailing-space: 0!important;
-    --_container-height: 15px!important;
-    --_hover-state-layer-color: transparent!important;
-    vertical-align: baseline!important;
-}
-
-:host(:hover) .label {
-    text-decoration: underline!important;
+    --_hover-state-layer-opacity: 1;
 }
 
 :host .label {
-    font-size: 14px!important;
-    color: var(--blue-40)!important;
-    line-height: normal!important;
     transition: color 0.3s ease!important;
-    font-weight: bold;
+}
+
+:host(.btn--primary) {
+    --_label-text-color: var(--md-ref-palette-primary40);
+    --_hover-label-text-color: var(--md-ref-palette-primary30);
+    --_focus-label-text-color: var(--md-ref-palette-primary20);
+    --_pressed-label-text-color: var(--md-ref-palette-primary20);
+    --_hover-state-layer-color: var(--md-ref-palette-primary95);
+    --_pressed-state-layer-color: var(--md-ref-palette-primary95);
+}
+
+:host(.btn--secondary) {
+    --_label-text-color: var(--md-ref-palette-secondary40);
+    --_hover-label-text-color: var(--md-ref-palette-secondary30);
+    --_focus-label-text-color: var(--md-ref-palette-secondary20);
+    --_pressed-label-text-color: var(--md-ref-palette-secondary20);
+    --_hover-state-layer-color: var(--md-ref-palette-secondary95);
+    --_pressed-state-layer-color: var(--md-ref-palette-secondary95);
+}
+
+:host(.btn--tertiary) {
+    --_label-text-color: var(--md-ref-palette-tertiary40);
+    --_hover-label-text-color: var(--md-ref-palette-tertiary30);
+    --_focus-label-text-color: var(--md-ref-palette-tertiary20);
+    --_pressed-label-text-color: var(--md-ref-palette-tertiary20);
+    --_hover-state-layer-color: var(--md-ref-palette-tertiary95);
+    --_pressed-state-layer-color: var(--md-ref-palette-tertiary95);
+}
+
+:host(.btn--neutral) {
+    --_label-text-color: var(--md-ref-palette-neutral-variant40);
+    --_hover-label-text-color: var(--md-ref-palette-neutral-variant30);
+    --_focus-label-text-color: var(--md-ref-palette-neutral-variant20);
+    --_pressed-label-text-color: var(--md-ref-palette-neutral-variant20);
+    --_hover-state-layer-color: var(--md-ref-palette-neutral-variant95);
+    --_pressed-state-layer-color: var(--md-ref-palette-neutral-variant95);
+}
+
+:host(.btn--info) {
+    --_label-text-color: var(--md-ref-palette-info30);
+    --_hover-label-text-color: var(--md-ref-palette-info10);
+    --_focus-label-text-color: var(--md-ref-palette-info30);
+    --_pressed-label-text-color: var(--md-ref-palette-info30);
+    --_hover-state-layer-color: var(--md-ref-palette-info95);
+    --_pressed-state-layer-color: var(--md-ref-palette-info95);
+}
+  
+:host(.btn--danger) { 
+    --_label-text-color: var(--md-ref-palette-error40);
+    --_hover-label-text-color: var(--md-ref-palette-error30);
+    --_focus-label-text-color: var(--md-ref-palette-error40);
+    --_pressed-label-text-color: var(--md-ref-palette-error40);
+    --_hover-state-layer-color: var(--md-ref-palette-error95);
+    --_pressed-state-layer-color: var(--md-ref-palette-error95);
+}
+
+:host(.btn--primary[disabled]) {
+    --_label-text-color: var(--md-ref-palette-primary40);
+    --_hover-label-text-color: var(--md-ref-palette-primary30);
+    --_hover-state-layer-color: var(--md-ref-palette-primary95);
+}
+
+:host(.btn--primary[disabled]) {
+    --_label-text-color: var(--md-ref-palette-primary40);
+    --_hover-label-text-color: var(--md-ref-palette-primary30);
+    --_hover-state-layer-color: var(--md-ref-palette-primary95);
 }

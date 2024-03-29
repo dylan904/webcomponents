@@ -1,10 +1,52 @@
 @import './_common.css';
 
-:host(md-outlined-button), :host(bmd-outlined-button) {
-    --_outline-color: var(--blue-primary)!important;
-    --_label-text-color: var(--blue-primary)!important;
+:host {
     --_container-color: transparent!important;
-    --_hover-label-text-color: #fff!important;
-    --_hover-state-layer-color: var(--blue-5)!important;
-    --_hover-state-layer-opacity: 1!important;
+    --_hover-state-layer-opacity: 1;
+}
+
+:host(.btn--primary) { 
+    --_outline-color: var(--md-ref-palette-primary40);
+    --_label-text-color: var(--md-ref-palette-primary40);
+    --_hover-label-text-color: var(--md-ref-palette-primary40);
+    --_hover-state-layer-color: var(--md-ref-palette-primary95);
+}
+
+:host(.btn--secondary) {
+    --_outline-color: var(--md-ref-palette-secondary40);
+    --_label-text-color: var(--md-ref-palette-secondary40);
+    --_hover-label-text-color: var(--md-ref-palette-secondary40);
+    --_hover-state-layer-color: var(--md-ref-palette-secondary95);
+}
+
+:host(.btn--tertiary) {
+    --_outline-color: var(--md-ref-palette-tertiary40);
+    --_label-text-color:  var(--md-ref-palette-tertiary40);
+    --_hover-label-text-color:  var(--md-ref-palette-tertiary40);
+    --_hover-state-layer-color: var(--md-ref-palette-tertiary95);
+}
+
+:host(.btn--neutral) {
+    --_outline-color: var(--md-ref-palette-neutral-variant30);
+    --_label-text-color:  var(--md-ref-palette-neutral-variant30);
+    --_hover-label-text-color:  var(--md-ref-palette-neutral-variant30);
+    --_hover-state-layer-color: var(--md-ref-palette-neutral-variant95);
+}
+
+:host(.btn--info) {
+    --_outline-color: var(--md-ref-palette-info40);
+    --_label-text-color:  var(--md-ref-palette-info40);
+    --_hover-label-text-color:  var(--md-ref-palette-info40);
+    --_hover-state-layer-color: var(--md-ref-palette-info95);
+}
+  
+:host(.btn--danger) { 
+    --_outline-color: var(--md-ref-palette-error40);
+    --_label-text-color:  var(--md-ref-palette-error40);
+    --_hover-label-text-color:  var(--md-ref-palette-error40)
+    --_hover-state-layer-color: var(--md-ref-palette-error95);
+}
+
+:host(.btn--danger) md-focus-ring { 
+    opacity: 0.5;
 }

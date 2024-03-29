@@ -11,9 +11,5 @@
     import propSpecs from '../webcomponents/button/props.js'
     
     const props = defineProps(propSpecs)
-    const mdComponentName = `bmd-${ getButtonType(props.type) }-button`
-</script>
-
-<script>
-    const getButtonType = type => type === 'primary' || type === 'default' ? 'filled' : type === 'neutral' ? 'outlined' : 'text'
+    const mdComponentName = `bmd-${ props.variant }-button`
 </script>

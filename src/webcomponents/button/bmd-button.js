@@ -8,7 +8,6 @@ import { css } from 'lit'
 
 class BeelineMdOutlinedButton extends MdOutlinedButton {
   static get styles() {
-    console.log('oulined', outlinedStyles)
     return [
       ...super.styles,
       css([ outlinedStyles ])
