@@ -21,6 +21,7 @@
     --_hover-label-text-color: var(--md-ref-palette-secondary30);
     --_focus-label-text-color: var(--md-ref-palette-secondary20);
     --_pressed-label-text-color: var(--md-ref-palette-secondary20);
+    
     --_hover-state-layer-color: var(--md-ref-palette-secondary95);
     --_pressed-state-layer-color: var(--md-ref-palette-secondary95);
 }
@@ -30,6 +31,7 @@
     --_hover-label-text-color: var(--md-ref-palette-tertiary30);
     --_focus-label-text-color: var(--md-ref-palette-tertiary20);
     --_pressed-label-text-color: var(--md-ref-palette-tertiary20);
+
     --_hover-state-layer-color: var(--md-ref-palette-tertiary95);
     --_pressed-state-layer-color: var(--md-ref-palette-tertiary95);
 }
@@ -39,6 +41,7 @@
     --_hover-label-text-color: var(--md-ref-palette-neutral-variant30);
     --_focus-label-text-color: var(--md-ref-palette-neutral-variant20);
     --_pressed-label-text-color: var(--md-ref-palette-neutral-variant20);
+
     --_hover-state-layer-color: var(--md-ref-palette-neutral-variant95);
     --_pressed-state-layer-color: var(--md-ref-palette-neutral-variant95);
 }
@@ -48,6 +51,7 @@
     --_hover-label-text-color: var(--md-ref-palette-info10);
     --_focus-label-text-color: var(--md-ref-palette-info30);
     --_pressed-label-text-color: var(--md-ref-palette-info30);
+
     --_hover-state-layer-color: var(--md-ref-palette-info95);
     --_pressed-state-layer-color: var(--md-ref-palette-info95);
 }
@@ -57,6 +61,7 @@
     --_hover-label-text-color: var(--md-ref-palette-error30);
     --_focus-label-text-color: var(--md-ref-palette-error40);
     --_pressed-label-text-color: var(--md-ref-palette-error40);
+
     --_hover-state-layer-color: var(--md-ref-palette-error95);
     --_pressed-state-layer-color: var(--md-ref-palette-error95);
 }

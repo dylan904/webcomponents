@@ -1,19 +1,19 @@
 :host {
     --_label-text-size: 1em!important;
-    --_leading-space: 20px!important;
-    --_trailing-space: 20px!important;
+    --_leading-space: 16px!important;
+    --_trailing-space: 16px!important;
 }
 
 :host(.btn--small) {
-    --_leading-space: 16px!important;
-    --_trailing-space: 16px!important;
+    --_leading-space: 12px!important;
+    --_trailing-space: 12px!important;
     --_container-height: 32px!important;
 }
 
 :host(.btn--large) {
     --_label-text-size: 1.3em!important;
-    --_leading-space: 30px!important;
-    --_trailing-space: 30px!important;
+    --_leading-space: 24px!important;
+    --_trailing-space: 24px!important;
     --_container-height: 48px!important;
 }
 
