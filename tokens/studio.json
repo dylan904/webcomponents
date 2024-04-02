@@ -552,6 +552,12 @@
       "value": "Roboto",
       "type": "fontFamily"
     },
+    "test": {
+      "root": "sys",
+      "value": "Roboto",
+      "type": "fontFamily",
+      "description": "delete me please."
+    },
     "weight-bold": {
       "root": "sys",
       "value": "700",
