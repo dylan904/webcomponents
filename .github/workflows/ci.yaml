@@ -25,4 +25,4 @@ jobs:
       # If your script requires dependencies, install them.
 
     - name: Run build-tokens script
-      run: node build-tokens.js
+      run: node tokens/build-tokens.js
