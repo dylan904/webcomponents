@@ -608,15 +608,15 @@
       },
       "icon-size-sm": {
         "type": "sizing",
-        "value": 20
+        "value": "12"
       },
       "icon-size-md": {
         "type": "sizing",
-        "value": 24
+        "value": "14"
       },
       "icon-size-lg": {
         "type": "sizing",
-        "value": 24
+        "value": "16"
       },
       "hover-container-opacity": {
         "type": "opacity",
