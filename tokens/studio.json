@@ -580,31 +580,31 @@
     "button": {
       "shape": {
         "type": "borderRadius",
-        "value": 4
+        "value": "4"
       },
       "x-space-sm": {
         "type": "spacing",
-        "value": 12
+        "value": "12"
       },
       "x-space-md": {
         "type": "spacing",
-        "value": 16
+        "value": "16"
       },
       "x-space-lg": {
         "type": "spacing",
-        "value": 24
+        "value": "24"
       },
       "height-sm": {
         "type": "spacing",
-        "value": 32
+        "value": "32"
       },
       "height-md": {
         "type": "spacing",
-        "value": 40
+        "value": "40"
       },
       "height-lg": {
         "type": "spacing",
-        "value": 48
+        "value": "48"
       },
       "icon-size-sm": {
         "type": "sizing",
@@ -620,19 +620,19 @@
       },
       "hover-container-opacity": {
         "type": "opacity",
-        "value": 1
+        "value": "1"
       },
       "disabled-container-opacity": {
         "type": "opacity",
-        "value": 1
+        "value": "1"
       },
       "pressed-container-opacity": {
         "type": "opacity",
-        "value": 1
+        "value": "1"
       },
       "hover-container-elevation": {
         "type": "elevation",
-        "value": 1
+        "value": "1"
       },
       "filled-button": {
         "attributes": {
@@ -673,6 +673,100 @@
           "hover-state-layer-color": {
             "type": "color",
             "value": "{primary.30}"
+          },
+          "pressed-state-layer-color": {
+            "type": "color",
+            "value": "{primary.20}"
+          }
+        },
+        "secondary": {
+          "container-color": {
+            "type": "color",
+            "value": "{secondary.50}"
+          },
+          "hover-state-layer-color": {
+            "type": "color",
+            "value": "{secondary.70}"
+          },
+          "pressed-state-layer-color": {
+            "type": "color",
+            "value": "{secondary.40}"
+          }
+        },
+        "tertiary": {
+          "container-color": {
+            "type": "color",
+            "value": "{tertiary.40}"
+          },
+          "hover-state-layer-color": {
+            "type": "color",
+            "value": "{tertiary.30}"
+          },
+          "pressed-state-layer-color": {
+            "type": "color",
+            "value": "{tertiary.20}"
+          }
+        },
+        "neutral": {
+          "container-color": {
+            "type": "color",
+            "value": "{neutral.95}"
+          },
+          "hover-state-layer-color": {
+            "type": "color",
+            "value": "{neutral.80}"
+          },
+          "pressed-state-layer-color": {
+            "type": "color",
+            "value": "{neutral.20}"
+          },
+          "hover-label-text-color": {
+            "type": "color",
+            "value": "{neutral-variant.0}"
+          }
+        },
+        "info": {
+          "container-color": {
+            "type": "color",
+            "value": "{info.70}"
+          },
+          "hover-state-layer-color": {
+            "type": "color",
+            "value": "{info.60}"
+          },
+          "pressed-state-layer-color": {
+            "type": "color",
+            "value": "{info.80}"
+          },
+          "label-text-color": {
+            "type": "color",
+            "value": "{info.10}"
+          }
+        },
+        "error": {
+          "container-color": {
+            "type": "color",
+            "value": "{error.40}"
+          },
+          "hover-state-layer-color": {
+            "type": "color",
+            "value": "{error.50}"
+          },
+          "pressed-state-layer-color": {
+            "type": "color",
+            "value": "{error.30}"
+          }
+        }
+      },
+      "outlined-button": {
+        "primary": {
+          "container-color": {
+            "type": "color",
+            "value": "{button.outlined-button.secondary.container-color}"
+          },
+          "hover-state-layer-color": {
+            "type": "color",
+            "value": "{button.outlined-button.primary.hover-state-layer-color}"
           },
           "pressed-state-layer-color": {
             "type": "color",
