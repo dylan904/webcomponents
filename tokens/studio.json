@@ -64,6 +64,10 @@
       "40-07": {
         "type": "color",
         "value": "rgba(3,87,252,0.07)"
+      },
+      "40-04": {
+        "type": "color",
+        "value": "rgba(3,87,252,0.04)"
       }
     },
     "secondary": {
@@ -130,6 +134,10 @@
       "40-07": {
         "type": "color",
         "value": "rgba(0,24,88,0.07)"
+      },
+      "40-04": {
+        "type": "color",
+        "value": "rgba(0,24,88,0.04)"
       }
     },
     "tertiary": {
@@ -192,6 +200,10 @@
       "10-15": {
         "type": "color",
         "value": "rgba(36,64,0,0.15)"
+      },
+      "40-04": {
+        "type": "color",
+        "value": "rgba(76,131,0,0.04)"
       },
       "40-07": {
         "type": "color",
@@ -316,6 +328,10 @@
       "40-07": {
         "type": "color",
         "value": "rgba(76,96,115,0.07)"
+      },
+      "40-04": {
+        "type": "color",
+        "value": "rgba(76,96,115,0.04)"
       }
     },
     "error": {
@@ -378,6 +394,10 @@
       "10-15": {
         "type": "color",
         "value": "rgba(100,10,10,0.15)"
+      },
+      "40-04": {
+        "type": "color",
+        "value": "rgba(216,19,19,0.04)"
       },
       "40-07": {
         "type": "color",
@@ -558,6 +578,11 @@
       "40-07": {
         "type": "color",
         "value": "rgba(0,155,214,0.07)",
+        "description": "small change to i-40 so its contrast 3.15 to use as focus state (was 3.07 so only fractional change"
+      },
+      "40-04": {
+        "type": "color",
+        "value": "rgba(0,155,214,0.04)",
         "description": "small change to i-40 so its contrast 3.15 to use as focus state (was 3.07 so only fractional change"
       }
     },
@@ -759,11 +784,11 @@
           },
           "hover-state-layer-color": {
             "type": "color",
-            "value": "rgba(0,11,41,0.15)"
+            "value": "{secondary.40-07}"
           },
           "pressed-state-layer-color": {
             "type": "color",
-            "value": "rgba(0,11,41,0.30)"
+            "value": "{secondary.40-04}"
           }
         },
         "tertiary": {
@@ -839,25 +864,25 @@
           },
           "hover-state-layer-color": {
             "type": "color",
-            "value": "{button.outlined-button.primary.hover-state-layer-color}"
+            "value": "{primary.40-07}"
           },
           "pressed-state-layer-color": {
             "type": "color",
-            "value": "{primary.20}"
+            "value": "{primary.40-04}"
           }
         },
         "secondary": {
           "container-color": {
             "type": "color",
-            "value": "{secondary.50}"
+            "value": "{secondary.100}"
           },
           "hover-state-layer-color": {
             "type": "color",
-            "value": "{secondary.70}"
+            "value": "{secondary.40-07}"
           },
           "pressed-state-layer-color": {
             "type": "color",
-            "value": "{secondary.40}"
+            "value": "{secondary.40-04}"
           }
         },
         "tertiary": {
@@ -867,25 +892,25 @@
           },
           "hover-state-layer-color": {
             "type": "color",
-            "value": "{tertiary.30}"
+            "value": "{tertiary.40-07}"
           },
           "pressed-state-layer-color": {
             "type": "color",
-            "value": "{tertiary.20}"
+            "value": "{tertiary.40-04}"
           }
         },
-        "neutral": {
+        "neutral-variant": {
           "container-color": {
             "type": "color",
             "value": "{neutral.95}"
           },
           "hover-state-layer-color": {
             "type": "color",
-            "value": "{neutral.80}"
+            "value": "{neutral-variant.40-07}"
           },
           "pressed-state-layer-color": {
             "type": "color",
-            "value": "{neutral.20}"
+            "value": "{neutral-variant.40-04}"
           },
           "hover-label-text-color": {
             "type": "color",
@@ -899,11 +924,11 @@
           },
           "hover-state-layer-color": {
             "type": "color",
-            "value": "{info.60}"
+            "value": "{info.40-07}"
           },
           "pressed-state-layer-color": {
             "type": "color",
-            "value": "{info.80}"
+            "value": "{info.40-04}"
           },
           "label-text-color": {
             "type": "color",
@@ -917,11 +942,105 @@
           },
           "hover-state-layer-color": {
             "type": "color",
-            "value": "{error.50}"
+            "value": "{error.40-07}"
           },
           "pressed-state-layer-color": {
             "type": "color",
-            "value": "{error.30}"
+            "value": "{error.40-04}"
+          }
+        }
+      },
+      "text-button": {
+        "primary": {
+          "container-color": {
+            "type": "color",
+            "value": "{button.outlined-button.secondary.container-color}"
+          },
+          "hover-state-layer-color": {
+            "type": "color",
+            "value": "{primary.40-07}"
+          },
+          "pressed-state-layer-color": {
+            "type": "color",
+            "value": "{primary.40-04}"
+          }
+        },
+        "secondary": {
+          "container-color": {
+            "type": "color",
+            "value": "{secondary.100}"
+          },
+          "hover-state-layer-color": {
+            "type": "color",
+            "value": "{secondary.40-07}"
+          },
+          "pressed-state-layer-color": {
+            "type": "color",
+            "value": "{secondary.40-04}"
+          }
+        },
+        "tertiary": {
+          "container-color": {
+            "type": "color",
+            "value": "{tertiary.40}"
+          },
+          "hover-state-layer-color": {
+            "type": "color",
+            "value": "{tertiary.40-07}"
+          },
+          "pressed-state-layer-color": {
+            "type": "color",
+            "value": "{tertiary.40-04}"
+          }
+        },
+        "neutral-variant": {
+          "container-color": {
+            "type": "color",
+            "value": "{neutral.95}"
+          },
+          "hover-state-layer-color": {
+            "type": "color",
+            "value": "{neutral-variant.40-07}"
+          },
+          "pressed-state-layer-color": {
+            "type": "color",
+            "value": "{neutral-variant.40-04}"
+          },
+          "hover-label-text-color": {
+            "type": "color",
+            "value": "{neutral-variant.0}"
+          }
+        },
+        "info": {
+          "container-color": {
+            "type": "color",
+            "value": "{info.70}"
+          },
+          "hover-state-layer-color": {
+            "type": "color",
+            "value": "{info.40-07}"
+          },
+          "pressed-state-layer-color": {
+            "type": "color",
+            "value": "{info.40-04}"
+          },
+          "label-text-color": {
+            "type": "color",
+            "value": "{info.10}"
+          }
+        },
+        "error": {
+          "container-color": {
+            "type": "color",
+            "value": "{error.40}"
+          },
+          "hover-state-layer-color": {
+            "type": "color",
+            "value": "{error.40-07}"
+          },
+          "pressed-state-layer-color": {
+            "type": "color",
+            "value": "{error.40-04}"
           }
         }
       }
