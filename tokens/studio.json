@@ -990,6 +990,46 @@
     }
   },
   "core/dimensions": {
+    "space-0": {
+      "value": "0",
+      "type": "spacing"
+    },
+    "space-1": {
+      "value": "4",
+      "type": "spacing"
+    },
+    "space-2": {
+      "value": "8",
+      "type": "spacing"
+    },
+    "space-3": {
+      "value": "12",
+      "type": "spacing"
+    },
+    "space-4": {
+      "value": "16",
+      "type": "spacing"
+    },
+    "space-5": {
+      "value": "24",
+      "type": "spacing"
+    },
+    "space-6": {
+      "value": "32",
+      "type": "spacing"
+    },
+    "space-7": {
+      "value": "48",
+      "type": "spacing"
+    },
+    "space-8": {
+      "value": "64",
+      "type": "spacing"
+    },
+    "space-9": {
+      "value": "80",
+      "type": "spacing"
+    },
     "shape": {
       "corner": {
         "extra-small": {
@@ -1128,7 +1168,7 @@
             "type": "color"
           },
           "disabled-container-color": {
-            "value": "{primary.primary-container}",
+            "value": "{primary.disabled-1}",
             "type": "color"
           }
         },
@@ -1244,6 +1284,18 @@
           "pressed-icon-color": {
             "value": "{primary.primary-accent}",
             "type": "color"
+          },
+          "disabled-label-text-color": {
+            "value": "{button.outlined-button.primary.disabled-outline-color}",
+            "type": "color"
+          },
+          "disabled-icon-color": {
+            "value": "{button.outlined-button.primary.disabled-label-text-color}",
+            "type": "color"
+          },
+          "disabled-outline-color": {
+            "value": "{primary.disabled-2}",
+            "type": "color"
           }
         },
         "secondary": {
@@ -1347,12 +1399,24 @@
             "value": "{primary.primary-high-shade-2}",
             "type": "color"
           },
+          "pressed-state-layer-color": {
+            "value": "{primary.primary-high-shade-1}",
+            "type": "color"
+          },
           "pressed-label-text-color": {
             "value": "{primary.primary-accent}",
             "type": "color"
           },
           "pressed-icon-color": {
             "value": "{primary.primary-accent}",
+            "type": "color"
+          },
+          "disabled-label-text-color": {
+            "value": "{primary.disabled-2}",
+            "type": "color"
+          },
+          "disabled-icon-color": {
+            "value": "{button.text-button.primary.disabled-label-text-color}",
             "type": "color"
           }
         },
@@ -1528,18 +1592,30 @@
       },
       "primary-high-shade-1": {
         "value": "rgba(3,87,252,0.04)",
-        "type": "color"
+        "type": "color",
+        "description": "state layer"
       },
       "primary-high-shade-2": {
         "value": "rgba(3,87,252,0.07)",
-        "type": "color"
+        "type": "color",
+        "description": "state layer"
       },
       "primary-low-shade-1": {
         "value": "rgba(1,37,106,0.30)",
-        "type": "color"
+        "type": "color",
+        "description": "state layer"
       },
       "primary-low-shade-2": {
         "value": "rgba(1,37,106,0.60)",
+        "type": "color",
+        "description": "state layer"
+      },
+      "disabled-1": {
+        "value": "{primary.90}",
+        "type": "color"
+      },
+      "disabled-2": {
+        "value": "{primary.80}",
         "type": "color"
       }
     },
@@ -1763,6 +1839,14 @@
       },
       "primary-low-shade-2": {
         "value": "rgba(3,57,252,0.60)",
+        "type": "color"
+      },
+      "disabled-1": {
+        "value": "{primary.90}",
+        "type": "color"
+      },
+      "disabled-2": {
+        "value": "{primary.80}",
         "type": "color"
       }
     },
@@ -2016,7 +2100,15 @@
         "body.large": "S:e7384190ae92554dcacef48938c57a9b1ec18bd1,",
         "label.small": "S:5669f8529011cc8da83492c6d53ed40b2b717cc5,",
         "label.medium": "S:a89ec8b9e6dbf7daa62f164bc9a2f229455df46c,",
-        "label.large": "S:85b1abe8506fdfc465b2d4c4e91c654a15121f18,"
+        "label.large": "S:85b1abe8506fdfc465b2d4c4e91c654a15121f18,",
+        "primary.disabled-1": "S:9ca42540f6323a9df8b094e6cc433031d7d075c5,",
+        "primary.disabled-2": "S:b04cc88d52b153bff4a6e5b45fee1ad6e4b7c18c,",
+        "button.text-button.primary.pressed-state-layer-color": "S:4199f26a82dcf7cf99e8b68073f0219724f12db7,",
+        "button.text-button.primary.disabled-label-text-color": "S:152d68776d742b5c6a1f779ad2b938dc31e899a4,",
+        "button.text-button.primary.disabled-icon-color": "S:d75490c6d3911449dc38de271e6b489e74a4300d,",
+        "button.outlined-button.primary.disabled-label-text-color": "S:5cdd7392b713304df43a81eff3d5dddd95f24f5c,",
+        "button.outlined-button.primary.disabled-icon-color": "S:7ff67da20836c667db6eeaeb41b2c4a3bc898ec7,",
+        "button.outlined-button.primary.disabled-outline-color": "S:25ee0b6642c6789f30df28b83af2c217a01d831a,"
       },
       "$figmaVariableReferences": {
         "surfaces.surface": "bf587e683df4091046eba45bbc0c62675716aea8",
@@ -2051,6 +2143,8 @@
         "other.outline": "49fb9ddbd87ecb7c1627be17d3341310977febd4",
         "other.background": "653f17b1ce70661569513412989337f3e26490e8",
         "other.on-background": "48175b55d60baba2c0ee7165d3e92100d57b0fd7",
+        "primary.disabled-1": "d88085d619c1c71e5a79e954a43be5f8369eb0c1",
+        "primary.disabled-2": "29a573eea771ca78d30879782b10700a8798eb22",
         "button.x-space.small": "880834b12ac73511519e5d03eea7d272222add1f",
         "button.x-space.medium": "90f28922cd71f71edb4d100a0d21c56b67455bdb",
         "button.x-space.large": "75eaaaa9e5b7f7d5180aa3c649894d2df41d0aa6",
@@ -2115,6 +2209,7 @@
         "button.text-button.primary.label-text-color": "e168646fcd71fc90150d0bdfb5557affea844655",
         "button.text-button.primary.icon-color": "5cb862b8cf466c98622db97edcb0bffda7393174",
         "button.text-button.primary.hover-state-layer-color": "b11efeed5679e7d7dad1304c28be7d9dddebf72f",
+        "button.text-button.primary.pressed-state-layer-color": "2d8b5a14d65c4b96ad432ef3780b5a4b392def19",
         "button.text-button.primary.pressed-label-text-color": "84865c8dabe85e24368c5e971ebe55c1d10bdede",
         "button.text-button.primary.pressed-icon-color": "756fee4befea9418147aca1970a06f69ddc5c363",
         "button.text-button.secondary.container-color": "f58e8bd29a039222ee5085169f322ac48fbb12e8",
@@ -2134,6 +2229,21 @@
         "button.text-button.error.container-color": "334b581781abe2aac8c0bb65915ac98d559a850e",
         "button.text-button.error.hover-state-layer-color": "168425800d3513342000efc1642796badc6e9b93",
         "button.text-button.error.pressed-state-layer-color": "1953a5e7a2ee4cfc1dec6db8553856850c71a5c5",
+        "button.text-button.primary.disabled-label-text-color": "ec97c8254b6981acab484e9b57477163250a8369",
+        "button.text-button.primary.disabled-icon-color": "2e33158ffc0914d7dbb5dd48c8629de9d853430c",
+        "button.outlined-button.primary.disabled-label-text-color": "00cbf871cc54792fcd189c4350e3982eb0498afd",
+        "button.outlined-button.primary.disabled-icon-color": "04917317b3d59ee2efc754e42966161ea7183772",
+        "button.outlined-button.primary.disabled-outline-color": "5c016622db1e8043e715cc97f533bd551b3e09cd",
+        "space-0": "d585582edee22c06fce3cdc4b46e1c49347e26e1",
+        "space-1": "92bb185945effe5d926055e201301fb2e8b74a8e",
+        "space-2": "ad28b77fdbac21b192567571dc3a2340d59e00b9",
+        "space-3": "521127f02c20551a0ae21c5ab66d5d4d2d35089d",
+        "space-4": "503fc4b2ef984c64e60c7b38bbadfad5e36defbd",
+        "space-5": "e9a55832d9736262079908499079e827839f4b0e",
+        "space-6": "c8e0a1898218a635273d2c324d613642748f19db",
+        "space-7": "01e5e4ba9ebb1b3a7c89866dbd541f02c033f332",
+        "space-8": "321b0b21a9e4ff4da1bbbd6f89dfea0bedb476b1",
+        "space-9": "0136cb379f0e009322fc584b3e483110596417e4",
         "shape.corner.extra-small": "adb75100cca06670ec10f16e888d8f33b5e78932",
         "shape.corner.small": "4a2b381a67de5396afb647a29f5ed6888958122d",
         "shape.corner.medium": "aa62854203a6f8f8bb38849bee1b05ed03f19446",
@@ -2173,6 +2283,8 @@
         "primary.primary-high-shade-2": "d987a5dc2892b67a1d9912abff41f107c2efeca4",
         "primary.primary-low-shade-1": "77ec763019a879286825673e071671c58a33220a",
         "primary.primary-low-shade-2": "e8a2dbdd482f5518683e77f6007c77801f297a83",
+        "primary.disabled-1": "d88085d619c1c71e5a79e954a43be5f8369eb0c1",
+        "primary.disabled-2": "29a573eea771ca78d30879782b10700a8798eb22",
         "secondary.secondary": "b814c0a5a4fb2a90da6183365abf0367d7321e10",
         "secondary.on-secondary": "8ab9ddb9e65b07b5518dd1a7b8c7df25f3339a33",
         "secondary.secondary-container": "5efd4c4d8dcb18da1665bf458732844265f1a44b",
@@ -2253,6 +2365,7 @@
         "button.text-button.primary.label-text-color": "e168646fcd71fc90150d0bdfb5557affea844655",
         "button.text-button.primary.icon-color": "5cb862b8cf466c98622db97edcb0bffda7393174",
         "button.text-button.primary.hover-state-layer-color": "b11efeed5679e7d7dad1304c28be7d9dddebf72f",
+        "button.text-button.primary.pressed-state-layer-color": "2d8b5a14d65c4b96ad432ef3780b5a4b392def19",
         "button.text-button.primary.pressed-label-text-color": "84865c8dabe85e24368c5e971ebe55c1d10bdede",
         "button.text-button.primary.pressed-icon-color": "756fee4befea9418147aca1970a06f69ddc5c363",
         "button.text-button.secondary.container-color": "f58e8bd29a039222ee5085169f322ac48fbb12e8",
@@ -2272,6 +2385,21 @@
         "button.text-button.error.container-color": "334b581781abe2aac8c0bb65915ac98d559a850e",
         "button.text-button.error.hover-state-layer-color": "168425800d3513342000efc1642796badc6e9b93",
         "button.text-button.error.pressed-state-layer-color": "1953a5e7a2ee4cfc1dec6db8553856850c71a5c5",
+        "button.text-button.primary.disabled-label-text-color": "ec97c8254b6981acab484e9b57477163250a8369",
+        "button.text-button.primary.disabled-icon-color": "2e33158ffc0914d7dbb5dd48c8629de9d853430c",
+        "button.outlined-button.primary.disabled-label-text-color": "00cbf871cc54792fcd189c4350e3982eb0498afd",
+        "button.outlined-button.primary.disabled-icon-color": "04917317b3d59ee2efc754e42966161ea7183772",
+        "button.outlined-button.primary.disabled-outline-color": "5c016622db1e8043e715cc97f533bd551b3e09cd",
+        "space-0": "d585582edee22c06fce3cdc4b46e1c49347e26e1",
+        "space-1": "92bb185945effe5d926055e201301fb2e8b74a8e",
+        "space-2": "ad28b77fdbac21b192567571dc3a2340d59e00b9",
+        "space-3": "521127f02c20551a0ae21c5ab66d5d4d2d35089d",
+        "space-4": "503fc4b2ef984c64e60c7b38bbadfad5e36defbd",
+        "space-5": "e9a55832d9736262079908499079e827839f4b0e",
+        "space-6": "c8e0a1898218a635273d2c324d613642748f19db",
+        "space-7": "01e5e4ba9ebb1b3a7c89866dbd541f02c033f332",
+        "space-8": "321b0b21a9e4ff4da1bbbd6f89dfea0bedb476b1",
+        "space-9": "0136cb379f0e009322fc584b3e483110596417e4",
         "shape.corner.extra-small": "adb75100cca06670ec10f16e888d8f33b5e78932",
         "shape.corner.small": "4a2b381a67de5396afb647a29f5ed6888958122d",
         "shape.corner.medium": "aa62854203a6f8f8bb38849bee1b05ed03f19446",
