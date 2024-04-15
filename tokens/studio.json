@@ -1629,20 +1629,20 @@
         "type": "color"
       }
     },
-    "neutral variant": {
-      "neutral variant-high-shade-1": {
+    "neutral-variant": {
+      "neutral-variant-high-shade-1": {
         "value": "rgba(76,96,115,0.04)",
         "type": "color"
       },
-      "neutral variant-high-shade-2": {
+      "neutral-variant-high-shade-2": {
         "value": "rgba(76,96,115,0.07)",
         "type": "color"
       },
-      "neutral variant-low-shade-1": {
+      "neutral-variant-low-shade-1": {
         "value": "rgba(140,155,169,0.15)",
         "type": "color"
       },
-      "neutral variant-low-shade-2": {
+      "neutral-variant-low-shade-2": {
         "value": "rgba(140,155,169,0.3)",
         "type": "color"
       }
