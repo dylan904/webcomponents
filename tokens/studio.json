@@ -106,22 +106,6 @@
       "100": {
         "value": "#FFFFFF",
         "type": "color"
-      },
-      "10-30": {
-        "value": "rgba(0,11,41,0.3)",
-        "type": "color"
-      },
-      "10-15": {
-        "value": "rgba(0,11,41,0.15)",
-        "type": "color"
-      },
-      "40-07": {
-        "value": "rgba(0,24,88,0.07)",
-        "type": "color"
-      },
-      "40-04": {
-        "value": "rgba(0,24,88,0.04)",
-        "type": "color"
       }
     },
     "tertiary": {
@@ -175,22 +159,6 @@
       },
       "100": {
         "value": "#FFFFFF",
-        "type": "color"
-      },
-      "10-30": {
-        "value": "rgba(36,64,0,0.3)",
-        "type": "color"
-      },
-      "10-15": {
-        "value": "rgba(36,64,0,0.15)",
-        "type": "color"
-      },
-      "40-04": {
-        "value": "rgba(76,131,0,0.04)",
-        "type": "color"
-      },
-      "40-07": {
-        "value": "rgba(76,131,0,0.07)",
         "type": "color"
       }
     },
@@ -300,22 +268,6 @@
       "100": {
         "value": "#FFFFFF",
         "type": "color"
-      },
-      "70-30": {
-        "value": "rgba(140,155,169,0.3)",
-        "type": "color"
-      },
-      "70-15": {
-        "value": "rgba(140,155,169,0.15)",
-        "type": "color"
-      },
-      "40-07": {
-        "value": "rgba(76,96,115,0.07)",
-        "type": "color"
-      },
-      "40-04": {
-        "value": "rgba(76,96,115,0.04)",
-        "type": "color"
       }
     },
     "error": {
@@ -369,22 +321,6 @@
       },
       "100": {
         "value": "#FFFFFF",
-        "type": "color"
-      },
-      "10-30": {
-        "value": "rgba(100,10,10,0.3)",
-        "type": "color"
-      },
-      "10-15": {
-        "value": "rgba(100,10,10,0.15)",
-        "type": "color"
-      },
-      "40-04": {
-        "value": "rgba(216,19,19,0.04)",
-        "type": "color"
-      },
-      "40-07": {
-        "value": "rgba(216,19,19,0.07)",
         "type": "color"
       }
     },
@@ -550,24 +486,6 @@
       "100": {
         "value": "#FFFFFF",
         "type": "color"
-      },
-      "30-30": {
-        "value": "rgba(0,123,169,0.3)",
-        "type": "color"
-      },
-      "30-15": {
-        "value": "rgba(0,123,169,0.15)",
-        "type": "color"
-      },
-      "40-07": {
-        "value": "rgba(0,155,214,0.07)",
-        "type": "color",
-        "description": "small change to i-40 so its contrast 3.15 to use as focus state (was 3.07 so only fractional change"
-      },
-      "40-04": {
-        "value": "rgba(0,155,214,0.04)",
-        "type": "color",
-        "description": "small change to i-40 so its contrast 3.15 to use as focus state (was 3.07 so only fractional change"
       }
     },
     "accent": {
@@ -1178,11 +1096,11 @@
             "type": "color"
           },
           "hover-state-layer-color": {
-            "value": "{secondary.40-07}",
+            "value": "{secondary.secondary-high-shade-2}",
             "type": "color"
           },
           "pressed-state-layer-color": {
-            "value": "{secondary.40-04}",
+            "value": "{secondary.secondary-high-shade-1}",
             "type": "color"
           }
         },
@@ -1304,11 +1222,11 @@
             "type": "color"
           },
           "hover-state-layer-color": {
-            "value": "{secondary.40-07}",
+            "value": "{secondary.secondary-high-shade-2}",
             "type": "color"
           },
           "pressed-state-layer-color": {
-            "value": "{secondary.40-04}",
+            "value": "{secondary.secondary-high-shade-1}",
             "type": "color"
           }
         },
@@ -1318,11 +1236,11 @@
             "type": "color"
           },
           "hover-state-layer-color": {
-            "value": "{tertiary.40-07}",
+            "value": "{tertiary.tertiary-high-shade-2}",
             "type": "color"
           },
           "pressed-state-layer-color": {
-            "value": "{tertiary.40-04}",
+            "value": "{tertiary.tertiary-high-shade-1}",
             "type": "color"
           }
         },
@@ -1350,11 +1268,11 @@
             "type": "color"
           },
           "hover-state-layer-color": {
-            "value": "{info.40-07}",
+            "value": "{info.info-high-shade-1}",
             "type": "color"
           },
           "pressed-state-layer-color": {
-            "value": "{info.40-04}",
+            "value": "{info.info-high-shade-1}",
             "type": "color"
           },
           "label-text-color": {
@@ -1368,11 +1286,11 @@
             "type": "color"
           },
           "hover-state-layer-color": {
-            "value": "{error.40-07}",
+            "value": "{error.error-high-shade-1}",
             "type": "color"
           },
           "pressed-state-layer-color": {
-            "value": "{error.40-04}",
+            "value": "{error.error-high-shade-2}",
             "type": "color"
           }
         },
@@ -1426,11 +1344,11 @@
             "type": "color"
           },
           "hover-state-layer-color": {
-            "value": "{secondary.40-07}",
+            "value": "{secondary.secondary-high-shade-2}",
             "type": "color"
           },
           "pressed-state-layer-color": {
-            "value": "{secondary.40-04}",
+            "value": "{secondary.secondary-high-shade-1}",
             "type": "color"
           }
         },
@@ -1440,11 +1358,11 @@
             "type": "color"
           },
           "hover-state-layer-color": {
-            "value": "{tertiary.40-07}",
+            "value": "{tertiary.tertiary-high-shade-2}",
             "type": "color"
           },
           "pressed-state-layer-color": {
-            "value": "{tertiary.40-04}",
+            "value": "{tertiary.tertiary-high-shade-1}",
             "type": "color"
           }
         },
@@ -1472,11 +1390,11 @@
             "type": "color"
           },
           "hover-state-layer-color": {
-            "value": "{info.40-07}",
+            "value": "{info.info-high-shade-1}",
             "type": "color"
           },
           "pressed-state-layer-color": {
-            "value": "{info.40-04}",
+            "value": "{info.info-high-shade-1}",
             "type": "color"
           },
           "label-text-color": {
@@ -1490,11 +1408,11 @@
             "type": "color"
           },
           "hover-state-layer-color": {
-            "value": "{error.40-07}",
+            "value": "{error.error-high-shade-1}",
             "type": "color"
           },
           "pressed-state-layer-color": {
-            "value": "{error.40-04}",
+            "value": "{error.error-high-shade-2}",
             "type": "color"
           }
         },
@@ -1647,6 +1565,22 @@
         "attributes": {
           "root": "sys-color"
         }
+      },
+      "secondary-high-shade-1": {
+        "value": "rgba(0,24,88,0.04)",
+        "type": "color"
+      },
+      "secondary-high-shade-2": {
+        "value": "rgba(0,24,88,0.07)",
+        "type": "color"
+      },
+      "secondary-low-shade-1": {
+        "value": "rgba(0,11,41,0.15)",
+        "type": "color"
+      },
+      "secondary-low-shade-2": {
+        "value": "rgba(0,11,41,0.3)",
+        "type": "color"
       }
     },
     "tertiary": {
@@ -1677,16 +1611,43 @@
         "attributes": {
           "root": "sys-color"
         }
+      },
+      "tertiary-high-shade-1": {
+        "value": "rgba(76,131,0,0.04)",
+        "type": "color"
+      },
+      "tertiary-high-shade-2": {
+        "value": "rgba(76,131,0,0.07)",
+        "type": "color"
+      },
+      "tertiary-low-shade-1": {
+        "value": "rgba(36,64,0,0.15)",
+        "type": "color"
+      },
+      "tertiary-low-shade-2": {
+        "value": "rgba(36,64,0,0.3)",
+        "type": "color"
+      }
+    },
+    "neutral variant": {
+      "neutral variant-high-shade-1": {
+        "value": "rgba(76,96,115,0.04)",
+        "type": "color"
+      },
+      "neutral variant-high-shade-2": {
+        "value": "rgba(76,96,115,0.07)",
+        "type": "color"
+      },
+      "neutral variant-low-shade-1": {
+        "value": "rgba(140,155,169,0.15)",
+        "type": "color"
+      },
+      "neutral variant-low-shade-2": {
+        "value": "rgba(140,155,169,0.3)",
+        "type": "color"
       }
     },
     "error": {
-      "error": {
-        "value": "{error.40}",
-        "type": "color",
-        "attributes": {
-          "root": "sys-color"
-        }
-      },
       "on-error": {
         "value": "{error.99}",
         "type": "color",
@@ -1701,12 +1662,50 @@
           "root": "sys-color"
         }
       },
+      "error": {
+        "value": "{error.40}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
       "on-error-container": {
         "value": "{error.10}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
         }
+      },
+      "error-high-shade-1": {
+        "value": "rgba(216,19,19,0.07)",
+        "type": "color"
+      },
+      "error-high-shade-2": {
+        "value": "rgba(216,19,19,0.04)",
+        "type": "color"
+      },
+      "error-low-shade-1": {
+        "value": "rgba(100,10,10,0.15)",
+        "type": "color"
+      },
+      "error-low-shade-2": {
+        "value": "rgba(100,10,10,0.3)",
+        "type": "color"
+      }
+    },
+    "info": {
+      "info-high-shade-1": {
+        "value": "rgba(0,155,214,0.07)",
+        "type": "color",
+        "description": "small change to i-40 so its contrast 3.15 to use as focus state (was 3.07 so only fractional change"
+      },
+      "info-high-shade-2": {
+        "value": "rgba(0,123,169,0.15)",
+        "type": "color"
+      },
+      "info-high-low-1": {
+        "value": "rgba(0,123,169,0.3)",
+        "type": "color"
       }
     },
     "other": {
