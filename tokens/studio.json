@@ -1392,15 +1392,15 @@
             "type": "color"
           },
           "disabled-label-text-color": {
-            "value": "{button.outlined-button.tertiary.disabled-outline-color}",
+            "value": "{tertiary.disabled-1}",
             "type": "color"
           },
           "disabled-icon-color": {
-            "value": "{button.outlined-button.tertiary.disabled-label-text-color}",
+            "value": "{tertiary.disabled-1}",
             "type": "color"
           },
           "disabled-outline-color": {
-            "value": "{tertiary.disabled-2}",
+            "value": "{tertiary.disabled-1}",
             "type": "color"
           }
         },
@@ -1973,11 +1973,11 @@
         "type": "color"
       },
       "disabled-1": {
-        "value": "{tertiary.90}",
+        "value": "{tertiary.80}",
         "type": "color"
       },
       "disabled-2": {
-        "value": "{tertiary.100}",
+        "value": "{tertiary.99}",
         "type": "color"
       },
       "tertiary-accent": {
