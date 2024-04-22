@@ -142,10 +142,10 @@ const BDSStyleDictionary = StyleDictionary.extend({
     ],
     "platforms": {
         "css": {
-            "buildPath": "tokens/build/css/",
+            "buildPath": "src/assets/css/",
             "transformGroup": "custom/css", // Use your custom transform group here
             "files": [{
-                "destination": "_variables.css",
+                "destination": "_variables-new.css",
                 "format": "custom/kebab-css"
             }]
         }

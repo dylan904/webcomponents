@@ -38,6 +38,8 @@
   --_pressed-state-layer-color: var(--md-filled-button-primary-pressed-state-layer-color);
   --_label-text-color: var(--md-filled-button-primary-label-text-color);
   --_disabled-container-color: var(--md-filled-button-primary-disabled-container-color);
+  --_hover-label-text-color: var(--md-filled-button-primary-hover-label-text-color, var(--_label-text-color));
+  --_pressed-label-text-color: var(--md-filled-button-primary-press-label-text-color, var(--_label-text-color));
 }
 
 :host(.btn--secondary) {
@@ -46,6 +48,8 @@
   --_pressed-state-layer-color: var(--md-filled-button-secondary-pressed-state-layer-color);
   --_label-text-color: var(--md-filled-button-secondary-label-text-color);
   --_disabled-container-color: var(--md-filled-button-secondary-disabled-container-color);
+  --_hover-label-text-color: var(--md-filled-button-secondary-hover-label-text-color, var(--_label-text-color));
+  --_pressed-label-text-color: var(--md-filled-button-secondary-press-label-text-color, var(--_label-text-color));
 }
 
 :host(.btn--tertiary) {
@@ -54,4 +58,6 @@
   --_pressed-state-layer-color: var(--md-filled-button-tertiary-pressed-state-layer-color);
   --_label-text-color: var(--md-filled-button-tertiary-label-text-color);
   --_disabled-container-color: var(--md-filled-button-tertiary-disabled-container-color);
+  --_hover-label-text-color: var(--md-filled-button-tertiary-hover-label-text-color, var(--_label-text-color));
+  --_pressed-label-text-color: var(--md-filled-button-tertiary-press-label-text-color, var(--_label-text-color));
 }

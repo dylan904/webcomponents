@@ -33,28 +33,40 @@
 }
 
 :host(.btn--primary) {
-  --_outline-color: var(--md-outlined-button-primary-outline-color);
-  --_label-text-color: var(--md-outlined-button-primary-label-text-color);
-  --_hover-state-layer-color: var(--md-outlined-button-primary-hover-state-layer-color);
-  --_disabled-outline-color: var(--md-outlined-button-primary-disabled-outline-color);
-  --_disabled-label-text-color: var(--md-outlined-button-primary-disabled-label-text-color);
-  --_disabled-icon-color: var(--md-outlined-button-primary-disabled-icon-color);
+  --_outline-color: var(--md-text-button-primary-outline-color);
+  --_label-text-color: var(--md-text-button-primary-label-text-color);
+  --_hover-state-layer-color: var(--md-text-button-primary-hover-state-layer-color);
+  --_pressed-state-layer-color: var(--md-text-button-primary-pressed-state-layer-color);
+  --_disabled-outline-color: var(--md-text-button-primary-disabled-outline-color);
+  --_disabled-label-text-color: var(--md-text-button-primary-disabled-label-text-color);
+  --_disabled-icon-color: var(--md-text-button-primary-disabled-icon-color);
+  --_hover-label-text-color: var(--md-text-button-primary-hover-label-text-color, var(--_label-text-color));
+  --_focus-label-text-color: var(--md-text-button-primary-focus-label-text-color, var(--_label-text-color));
+  --_pressed-label-text-color: var(--md-text-button-primary-press-label-text-color, var(--_label-text-color));
 }
 
 :host(.btn--secondary) {
-  --_outline-color: var(--md-outlined-button-secondary-outline-color);
-  --_label-text-color: var(--md-outlined-button-secondary-label-text-color);
-  --_hover-state-layer-color: var(--md-outlined-button-secondary-hover-state-layer-color);
-  --_disabled-outline-color: var(--md-outlined-button-secondary-disabled-outline-color);
-  --_disabled-label-text-color: var(--md-outlined-button-secondary-disabled-label-text-color);
-  --_disabled-icon-color: var(--md-outlined-button-secondary-disabled-icon-color);
+  --_outline-color: var(--md-text-button-secondary-outline-color);
+  --_label-text-color: var(--md-text-button-secondary-label-text-color);
+  --_hover-state-layer-color: var(--md-text-button-secondary-hover-state-layer-color);
+  --_pressed-state-layer-color: var(--md-text-button-secondary-pressed-state-layer-color);
+  --_disabled-outline-color: var(--md-text-button-secondary-disabled-outline-color);
+  --_disabled-label-text-color: var(--md-text-button-secondary-disabled-label-text-color);
+  --_disabled-icon-color: var(--md-text-button-secondary-disabled-icon-color);
+  --_hover-label-text-color: var(--md-text-button-secondary-hover-label-text-color, var(--_label-text-color));
+  --_focus-label-text-color: var(--md-text-button-secondary-focus-label-text-color, var(--_label-text-color));
+  --_pressed-label-text-color: var(--md-text-button-secondary-press-label-text-color, var(--_label-text-color));
 }
 
 :host(.btn--tertiary) {
-  --_outline-color: var(--md-outlined-button-tertiary-outline-color);
-  --_label-text-color: var(--md-outlined-button-tertiary-label-text-color);
-  --_hover-state-layer-color: var(--md-outlined-button-tertiary-hover-state-layer-color);
-  --_disabled-outline-color: var(--md-outlined-button-tertiary-disabled-outline-color);
-  --_disabled-label-text-color: var(--md-outlined-button-tertiary-disabled-label-text-color);
-  --_disabled-icon-color: var(--md-outlined-button-tertiary-disabled-icon-color);
+  --_outline-color: var(--md-text-button-tertiary-outline-color);
+  --_label-text-color: var(--md-text-button-tertiary-label-text-color);
+  --_hover-state-layer-color: var(--md-text-button-tertiary-hover-state-layer-color);
+  --_pressed-state-layer-color: var(--md-text-button-tertiary-pressed-state-layer-color);
+  --_disabled-outline-color: var(--md-text-button-tertiary-disabled-outline-color);
+  --_disabled-label-text-color: var(--md-text-button-tertiary-disabled-label-text-color);
+  --_disabled-icon-color: var(--md-text-button-tertiary-disabled-icon-color);
+  --_hover-label-text-color: var(--md-text-button-tertiary-hover-label-text-color, var(--_label-text-color));
+  --_focus-label-text-color: var(--md-text-button-tertiary-focus-label-text-color, var(--_label-text-color));
+  --_pressed-label-text-color: var(--md-text-button-tertiary-press-label-text-color, var(--_label-text-color));
 }

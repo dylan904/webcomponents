@@ -1,4 +1,5 @@
 @import './base.css';
+@import './_variables-new.css';
 
 button, bmd-filled-button, bmd-outlined-button, md-filled-button, md-outlined-button {
   margin-right: 12px;

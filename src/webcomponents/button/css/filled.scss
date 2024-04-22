@@ -6,6 +6,8 @@
     --_pressed-state-layer-color: var(--md-filled-button-#{$type}-pressed-state-layer-color);
     --_label-text-color: var(--md-filled-button-#{$type}-label-text-color);
     --_disabled-container-color: var(--md-filled-button-#{$type}-disabled-container-color);
+    --_hover-label-text-color: var(--md-filled-button-#{$type}-hover-label-text-color, var(--_label-text-color));
+    --_pressed-label-text-color: var(--md-filled-button-#{$type}-press-label-text-color, var(--_label-text-color));
 }
   
 @each $type in $button-types {

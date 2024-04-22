@@ -1317,6 +1317,14 @@
         }
       },
       "outlined-button": {
+        "hover-state-layer-opacity": {
+          "value": "{button.hover-container-opacity}",
+          "type": "opacity"
+        },
+        "pressed-state-layer-opacity": {
+          "value": "{button.pressed-container-opacity}",
+          "type": "opacity"
+        },
         "primary": {
           "outline-color": {
             "value": "{primary.primary}",
@@ -1603,6 +1611,14 @@
         }
       },
       "text-button": {
+        "hover-state-layer-opacity": {
+          "value": "{button.hover-container-opacity}",
+          "type": "opacity"
+        },
+        "pressed-state-layer-opacity": {
+          "value": "{button.pressed-container-opacity}",
+          "type": "opacity"
+        },
         "primary": {
           "label-text-color": {
             "value": "{primary.primary}",
