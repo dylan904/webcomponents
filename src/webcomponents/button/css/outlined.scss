@@ -1,0 +1,17 @@
+@import './_common.scss';
+
+@mixin outlined-button-style($type) {
+    --_outline-color: var(--md-outlined-button-#{$type}-outline-color);
+    --_label-text-color: var(--md-outlined-button-#{$type}-label-text-color);
+    --_hover-state-layer-color: var(--md-outlined-button-#{$type}-hover-state-layer-color);
+    --_disabled-outline-color: var(--md-outlined-button-#{$type}-disabled-outline-color);
+    --_disabled-label-text-color: var(--md-outlined-button-#{$type}-disabled-label-text-color);
+    --_disabled-icon-color: var(--md-outlined-button-#{$type}-disabled-icon-color);
+    --_disabled-outline-opacity: 1;
+}
+  
+@each $type in $button-types {
+    :host(.btn--#{$type}) {
+        @include outlined-button-style($type);
+    }
+}

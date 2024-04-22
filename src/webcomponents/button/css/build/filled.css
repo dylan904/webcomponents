@@ -1,0 +1,57 @@
+:host(.btn--small) {
+  --_label-text-size: var(--md-sys-label-small-size);
+  --_label-text-line-height: var(--md-sys-label-small-line-height);
+  --_label-text-weight: var(--md-sys-label-small-weight);
+  --_icon-size: var(--md-button-icon-size-small);
+  --_leading-space: var(--md-button-x-space-small);
+  --_trailing-space: var(--md-button-x-space-small);
+  --_container-height: var(--md-button-container-height-small);
+}
+
+:host(.btn--medium) {
+  --_label-text-size: var(--md-sys-label-medium-size);
+  --_label-text-line-height: var(--md-sys-label-medium-line-height);
+  --_label-text-weight: var(--md-sys-label-medium-weight);
+  --_icon-size: var(--md-button-icon-size-medium);
+  --_leading-space: var(--md-button-x-space-medium);
+  --_trailing-space: var(--md-button-x-space-medium);
+  --_container-height: var(--md-button-container-height-medium);
+}
+
+:host(.btn--large) {
+  --_label-text-size: var(--md-sys-label-large-size);
+  --_label-text-line-height: var(--md-sys-label-large-line-height);
+  --_label-text-weight: var(--md-sys-label-large-weight);
+  --_icon-size: var(--md-button-icon-size-large);
+  --_leading-space: var(--md-button-x-space-large);
+  --_trailing-space: var(--md-button-x-space-large);
+  --_container-height: var(--md-button-container-height-large);
+}
+
+.label {
+  transition: color 0.3s ease;
+}
+
+:host(.btn--primary) {
+  --_container-color: var(--md-filled-button-primary-container-color);
+  --_hover-state-layer-color: var(--md-filled-button-primary-hover-state-layer-color);
+  --_pressed-state-layer-color: var(--md-filled-button-primary-pressed-state-layer-color);
+  --_label-text-color: var(--md-filled-button-primary-label-text-color);
+  --_disabled-container-color: var(--md-filled-button-primary-disabled-container-color);
+}
+
+:host(.btn--secondary) {
+  --_container-color: var(--md-filled-button-secondary-container-color);
+  --_hover-state-layer-color: var(--md-filled-button-secondary-hover-state-layer-color);
+  --_pressed-state-layer-color: var(--md-filled-button-secondary-pressed-state-layer-color);
+  --_label-text-color: var(--md-filled-button-secondary-label-text-color);
+  --_disabled-container-color: var(--md-filled-button-secondary-disabled-container-color);
+}
+
+:host(.btn--tertiary) {
+  --_container-color: var(--md-filled-button-tertiary-container-color);
+  --_hover-state-layer-color: var(--md-filled-button-tertiary-hover-state-layer-color);
+  --_pressed-state-layer-color: var(--md-filled-button-tertiary-pressed-state-layer-color);
+  --_label-text-color: var(--md-filled-button-tertiary-label-text-color);
+  --_disabled-container-color: var(--md-filled-button-tertiary-disabled-container-color);
+}

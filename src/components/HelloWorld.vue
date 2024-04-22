@@ -41,8 +41,8 @@ const testLitButtonEvent = () => {
 <br/><br/>
 
 <MButton variant="filled" type="primary" :size="size" id="lit-button-test" label="MD Filled" @click="testLitButtonEvent" />
-<MButton variant="outlined" type="secondary" :size="size" id="lit-button-test" label="MD Outlined" @click="testLitButtonEvent" />
-<MButton variant="text" type="tertiary" :size="size" id="lit-button-test" label="MD Link" @click="testLitButtonEvent" />
+<MButton variant="outlined" type="primary" :size="size" id="lit-button-test" label="MD Outlined" @click="testLitButtonEvent" />
+<MButton variant="text" type="primary" :size="size" id="lit-button-test" label="MD Link" @click="testLitButtonEvent" />
 
 <BModal :closeOnPrimaryClick="true" :closeOnOverlayClick="true" v-model="showBModal" id="create-user-modal" title="Create User" type="form" primaryActionText="Submit" secondaryActionText="Cancel" tertiaryActionText="Submit & New" />
 <MModal :closeOnPrimaryClick="true" :closeOnOverlayClick="true" v-model="showMModal" id="create-user-modal" title="Create User" type="form" primaryActionText="Submit" secondaryActionText="Cancel" tertiaryActionText="Submit & New" message="This is a test." />

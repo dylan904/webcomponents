@@ -1,0 +1,15 @@
+@import './_common.scss';
+
+@mixin filled-button-style($type) {
+    --_container-color: var(--md-filled-button-#{$type}-container-color);
+    --_hover-state-layer-color: var(--md-filled-button-#{$type}-hover-state-layer-color);
+    --_pressed-state-layer-color: var(--md-filled-button-#{$type}-pressed-state-layer-color);
+    --_label-text-color: var(--md-filled-button-#{$type}-label-text-color);
+    --_disabled-container-color: var(--md-filled-button-#{$type}-disabled-container-color);
+}
+  
+@each $type in $button-types {
+    :host(.btn--#{$type}) {
+        @include filled-button-style($type);
+    }
+}
