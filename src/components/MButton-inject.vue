@@ -19,8 +19,8 @@
     const mdComponentName = `md-${ buttonType }-button`
 
     const styles = buttonType === 'filled' ? filledStyles : buttonType === 'outlined' ? outlinedStyles : textStyles
-    const { autoInject } = useShadowStyles();
-    autoInject(styles);
+    const { autoInject } = useShadowStyles()
+    autoInject(styles)
 </script>
 
 <script>

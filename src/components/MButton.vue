@@ -4,7 +4,12 @@
       :disabled="disabled" 
       :id="id" 
       :class="`btn--${ size } btn--${ type }`"
-    ><slot v-if="$slots.default"></slot><template v-else>{{ label }}</template></component>
+      :trailing-icon="iconPosition === 'trailing' ? true : null"
+    >
+    <md-icon v-if="icon" slot="icon">check</md-icon>
+    <slot v-if="$slots.default"></slot>
+    <template v-else>{{ label }}</template>
+  </component>
 </template>
   
 <script setup>
@@ -13,3 +18,4 @@
     const props = defineProps(propSpecs)
     const mdComponentName = `bmd-${ props.variant }-button`
 </script>
+ 

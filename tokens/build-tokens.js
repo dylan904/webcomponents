@@ -25,17 +25,21 @@ StyleDictionary.registerFormat({
         return !dictionary.tokens[token.path[0]].attributes?.ignore || token.path.length > 2
       }).map(token => {
         const attributes = token.attributes
-        let root = attributes.root
-        if (!root) {
-          if (token.attributes.origin?.includes('palette'))
-            root = 'ref-palette'
-          else if (token.attributes.origin?.includes('component'))
-            root = null
-          else if (token.type === 'color') 
-            root = 'sys-color'
-          else
-            root = 'sys'
+        const origin = attributes.origin
+
+        if (origin?.includes('type')) {
+          console.log('checktoken', token)
         }
+
+        let root
+        if (origin?.includes('palette'))
+          root = 'ref-palette'
+        else if (origin?.includes('component') || attributes.category === 'icon')
+          root = null
+        else if (token.type === 'color') 
+          root = 'sys-color'
+        else
+          root = 'sys'
         
         const ignoredAtRoot = dictionary.tokens[token.path[0]].attributes?.ignore
         const tokenPath = ignoredAtRoot ? token.path.slice(1) : token.path
@@ -45,11 +49,9 @@ StyleDictionary.registerFormat({
         if (token.type === 'typography') {
           const mappedTypograpy = mapTypography(token.value)
           if (!root) {
-            const origin = token.attributes.origin
             root = origin.includes('typography') || origin.includes('typeface') || origin.includes('typescale') ? 'sys-typescale' : null
           }
           
-          //console.log('mapped', token.path, mappedTypograpy, )
           return Object.entries(mappedTypograpy).map(([key, value]) => {
             const fullTokenPath = root ? [ 'md', root, ...tokenPath, key] : ['md', ...tokenPath, key]
             console.log('typography', fullTokenPath, value)
@@ -59,7 +61,6 @@ StyleDictionary.registerFormat({
 
         if (attributes.type?.includes(attributes.category)) {
           tokenPath.shift()
-          //console.log('shifted subitem', token)
         }
 
         const fullTokenPath = root ? [ 'md', root, ...tokenPath] : ['md', ...tokenPath]
@@ -123,7 +124,7 @@ StyleDictionary.registerParser({
 
     return processedTokens
   }
-});
+})
 
 StyleDictionary.registerTransform({
     name: 'name/cti/kebab',
@@ -155,17 +156,17 @@ const BDSStyleDictionary = StyleDictionary.extend({
 BDSStyleDictionary.buildAllPlatforms()
 
 function removeTopLayerAndAnnotate(data) {
-  let result = {};  // Initialize the result as an empty object
+  let result = {}  // Initialize the result as an empty object
   
   // Function to recursively process objects and add attributes
   function process(subData, origin) {
-    const newObject = {};
+    const newObject = {}
 
     Object.entries(subData).forEach(([key, value]) => {
       if (origin.startsWith('$')) {
-        return; // Skip keys that start with '$'
+        return // Skip keys that start with '$'
       }
-      //console.log('looping', key);
+      //console.log('looping', key)
 
       if (typeof value === 'object' && value !== null && !Array.isArray(value)) {
         if ('value' in value) {
@@ -173,12 +174,12 @@ function removeTopLayerAndAnnotate(data) {
           
           if (theme) {
             if (!newObject[key]) {
-              newObject[key] = {};
+              newObject[key] = {}
             }
             newObject[key] = { ...value, attributes: { origin, theme: {[theme]: value.value} } }
           } else {
             // Process the final object containing a 'value' key
-            newObject[key] = { ...value, attributes: { origin } };
+            newObject[key] = { ...value, attributes: { origin } }
           }
 
           if (key === 'container-color')
@@ -188,14 +189,14 @@ function removeTopLayerAndAnnotate(data) {
           // Recursive call for nested objects
           if (newObject[key]) {
             // If the key already exists, merge the results
-            newObject[key] = {...newObject[key], ...process(value, origin)};
+            newObject[key] = {...newObject[key], ...process(value, origin)}
           } else {
-            newObject[key] = process(value, origin);
+            newObject[key] = process(value, origin)
           }
         }
       } else {
         // Handle non-object or terminal values
-        newObject[key] = value;
+        newObject[key] = value
       }
     })
 
@@ -216,15 +217,15 @@ function removeTopLayerAndAnnotate(data) {
           }
 
             // Ensure the target value is an object to merge into
-            if (!target[key]) target[key] = {};
+            if (!target[key]) target[key] = {}
             // Recursively merge the current property
-            deepMerge(target[key], source[key]);
+            deepMerge(target[key], source[key])
         } else {
             // Assign the source value to the target
-            target[key] = source[key];
+            target[key] = source[key]
         }
-    });
-    return target;
+    })
+    return target
 }
 
   // Process each top-level key and integrate it into the result
@@ -232,9 +233,9 @@ function removeTopLayerAndAnnotate(data) {
     //console.log('reprocess')
     const processedContents = process(contents, topKey)
     deepMerge(result, processedContents)
-  });
+  })
 
-  return result;
+  return result
 }
 
 function mapTypography(styleObject) {
@@ -258,7 +259,7 @@ function getValue(obj, props) {
   let result = obj
   for (let prop of props) {
     if (result[prop] === undefined) {
-      return undefined; // Return undefined if the property doesn't exist
+      return undefined // Return undefined if the property doesn't exist
     }
     result = result[prop]
   }

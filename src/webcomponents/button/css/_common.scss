@@ -5,15 +5,18 @@ $button-sizes: small, medium, large;
     --_label-text-size: var(--md-sys-label-#{$size}-size);
     --_label-text-line-height: var(--md-sys-label-#{$size}-line-height);
     --_label-text-weight: var(--md-sys-label-#{$size}-weight);
-    --_icon-size: var(--md-button-icon-size-#{$size});
     --_leading-space: var(--md-button-x-space-#{$size});
     --_trailing-space: var(--md-button-x-space-#{$size});
     --_container-height: var(--md-button-container-height-#{$size});
 }
   
-@each $type in $button-sizes {
-    :host(.btn--#{$type}) {
-        @include sized-button-style($type);
+@each $size in $button-sizes {
+    :host(.btn--#{$size}) {
+        @include sized-button-style($size);
+    }
+
+    :host(.btn--#{$size}) ::slotted([slot=icon]) {
+        --_icon-size: calc(var(--md-button-icon-size-#{$size}) * 1.57);
     }
 }
 

@@ -3,11 +3,18 @@ import propIsValid from '../../utils/propIsValid'
 const validTypes = ['primary', 'secondary', 'tertiary', 'danger', 'neutral', 'info']
 const validSizes = ['small', 'medium', 'large']
 const validVariants = ['filled', 'outlined', 'text', 'tonal', 'elevated']
+const validIconPositions = ['leading', 'trailing']
 
 export default {
     accessibilityText: String,
     disabled: Boolean,
     faIcon: Array,
+    icon: String,
+    iconPosition: {
+        type: String,
+        default: 'leading',
+        validator: (value) => propIsValid(value, validIconPositions)
+    },
     id: {
         type: String,
         required: true
