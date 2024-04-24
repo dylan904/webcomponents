@@ -13,7 +13,7 @@ export default {
     iconPosition: {
         type: String,
         default: 'leading',
-        validator: (value) => propIsValid(value, validIconPositions)
+        validator: value => propIsValid(value, validIconPositions)
     },
     id: {
         type: String,
@@ -26,16 +26,16 @@ export default {
     size: {
         type: String,
         default: 'medium',
-        validator: (value) => propIsValid(value, validSizes)
+        validator: value => propIsValid(value, validSizes)
     },
     type: {
         type: String,
         default: 'primary',
-        validator: (value) => propIsValid(value, validTypes)
+        validator: value => propIsValid(value, validTypes)
     },
     variant: {
         type: String,
         default: 'filled',
-        validator: (value) => propIsValid(value, validVariants)
+        validator: value => propIsValid(value, validVariants)
     }
 }

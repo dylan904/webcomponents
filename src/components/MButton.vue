@@ -6,7 +6,7 @@
       :class="`btn--${ size } btn--${ type }`"
       :trailing-icon="iconPosition === 'trailing' ? true : null"
     >
-    <md-icon v-if="icon" slot="icon">check</md-icon>
+    <md-icon v-if="icon" slot="icon">{{ icon }}</md-icon>
     <slot v-if="$slots.default"></slot>
     <template v-else>{{ label }}</template>
   </component>

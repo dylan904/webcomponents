@@ -1,6 +1,7 @@
 import { MdOutlinedButton } from '@material/web/button/outlined-button.js'
 import { MdFilledButton } from '@material/web/button/filled-button.js'
 import { MdTextButton } from '@material/web/button/text-button.js'
+import '@material/web/icon/icon.js'
 
 import filledStyles from './css/build/filled.css?inline'
 import outlinedStyles from './css/build/outlined.css?inline'
@@ -13,7 +14,7 @@ class BeelineMdOutlinedButton extends MdOutlinedButton {
     return [
       ...super.styles,
       css([ outlinedStyles ])
-    ];
+    ]
   }
 }
 
@@ -22,7 +23,7 @@ class BeelineMdFilledButton extends MdFilledButton {
     return [
       ...super.styles,
       css([ filledStyles ])
-    ];
+    ]
   }
 }
 
@@ -31,7 +32,7 @@ class BeelineMdTextButton extends MdTextButton {
     return [
       ...super.styles,
       css([ textStyles ])
-    ];
+    ]
   }
 }
 

@@ -5,9 +5,9 @@ $button-sizes: small, medium, large;
     --_label-text-size: var(--md-sys-label-#{$size}-size);
     --_label-text-line-height: var(--md-sys-label-#{$size}-line-height);
     --_label-text-weight: var(--md-sys-label-#{$size}-weight);
-    --_leading-space: var(--md-button-x-space-#{$size});
-    --_trailing-space: var(--md-button-x-space-#{$size});
     --_container-height: var(--md-button-container-height-#{$size});
+    padding-inline-start: var(--md-button-x-space-#{$size})!important;
+    padding-inline-end: var(--md-button-x-space-#{$size})!important;
 }
   
 @each $size in $button-sizes {
@@ -16,7 +16,8 @@ $button-sizes: small, medium, large;
     }
 
     :host(.btn--#{$size}) ::slotted([slot=icon]) {
-        --_icon-size: calc(var(--md-button-icon-size-#{$size}) * 1.57);
+        --_icon-size: var(--md-button-icon-size-#{$size});
+        font-size: calc(var(--md-button-icon-size-#{$size}) * 1.57);
     }
 }
 
