@@ -17,7 +17,8 @@ $button-sizes: small, medium, large;
 
     :host(.btn--#{$size}) ::slotted([slot=icon]) {
         --_icon-size: var(--md-button-icon-size-#{$size});
-        font-size: calc(var(--md-button-icon-size-#{$size}) * 1.57);
+        font-size: calc(var(--md-button-icon-size-#{$size}) * 1.5);
+        overflow: visible;
     }
 }
 

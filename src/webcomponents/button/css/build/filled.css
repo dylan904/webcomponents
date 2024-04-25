@@ -9,7 +9,8 @@
 
 :host(.btn--small) ::slotted([slot=icon]) {
   --_icon-size: var(--md-button-icon-size-small);
-  font-size: calc(var(--md-button-icon-size-small) * 1.57);
+  font-size: calc(var(--md-button-icon-size-small) * 1.5);
+  overflow: visible;
 }
 
 :host(.btn--medium) {
@@ -23,7 +24,8 @@
 
 :host(.btn--medium) ::slotted([slot=icon]) {
   --_icon-size: var(--md-button-icon-size-medium);
-  font-size: calc(var(--md-button-icon-size-medium) * 1.57);
+  font-size: calc(var(--md-button-icon-size-medium) * 1.5);
+  overflow: visible;
 }
 
 :host(.btn--large) {
@@ -37,7 +39,8 @@
 
 :host(.btn--large) ::slotted([slot=icon]) {
   --_icon-size: var(--md-button-icon-size-large);
-  font-size: calc(var(--md-button-icon-size-large) * 1.57);
+  font-size: calc(var(--md-button-icon-size-large) * 1.5);
+  overflow: visible;
 }
 
 .label {
