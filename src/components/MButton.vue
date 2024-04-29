@@ -12,8 +12,8 @@
   </component>
 </template>
   
-<script setup>
-    import propSpecs from '../webcomponents/button/props.js'
+<script setup lang="ts">
+    import propSpecs from '../webcomponents/button/props.ts'
     
     const props = defineProps(propSpecs)
     const mdComponentName = `bmd-${ props.variant }-button`
