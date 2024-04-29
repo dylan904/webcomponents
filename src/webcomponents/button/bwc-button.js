@@ -1,6 +1,6 @@
 import './bmd-button.js'
 import { LitElement } from 'lit'
-import { html, unsafeStatic } from 'lit/static-html.js';
+import { html, unsafeStatic } from 'lit/static-html.js'
 import propSpecs from './props.js'
 
 class BeelineButton extends LitElement {
@@ -19,7 +19,7 @@ class BeelineButton extends LitElement {
   }
 
   render() {
-    const buttonTag = unsafeStatic(`bmd-${ this.variant }-button`);
+    const buttonTag = unsafeStatic(`bmd-${ this.variant }-button`)
     window.test = this
     console.log('render', this)
 
