@@ -904,7 +904,7 @@
   },
   "core/dimensions": {
     "space-0": {
-      "value": "0",
+      "value": "0px",
       "type": "spacing"
     },
     "space-1": {
