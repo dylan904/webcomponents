@@ -2242,6 +2242,10 @@
       "neutral-variant-accent": {
         "value": "{neutral-variant.20}",
         "type": "color"
+      },
+      "other": {
+        "value": "#e20808",
+        "type": "color"
       }
     },
     "error": {
