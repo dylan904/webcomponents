@@ -1903,7 +1903,7 @@
             "type": "color"
           },
           "hover-state-layer-color": {
-            "value": "{tertiary.tertiary-high-shade-1}",
+            "value": "{tertiary.tertiary-high-shade-2}",
             "type": "color"
           },
           "hover-label-text-color": {
@@ -2188,7 +2188,7 @@
         }
       },
       "tertiary-high-shade-2": {
-        "value": "rgba(76,131,0,0.08)",
+        "value": "rgba(76,131,0,0.1)",
         "type": "color",
         "attributes": {
           "root": "sys-color"
