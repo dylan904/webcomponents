@@ -1343,7 +1343,7 @@
             "type": "color"
           },
           "pressed-state-layer-color": {
-            "value": "{primary.primary-high-shade-1}",
+            "value": "{primary.primary-low-shade-1}",
             "type": "color"
           },
           "pressed-outline-color": {
@@ -1389,7 +1389,7 @@
             "type": "color"
           },
           "pressed-state-layer-color": {
-            "value": "{secondary.secondary-high-shade-1}",
+            "value": "{secondary.secondary-high-shade-2}",
             "type": "color"
           },
           "pressed-outline-color": {
@@ -1849,6 +1849,18 @@
           "pressed-icon-color": {
             "value": "{primary.on-primary-container}",
             "type": "color"
+          },
+          "hover-state-layer-color": {
+            "value": "{primary.primary-low-shade-1}",
+            "type": "color"
+          },
+          "hover-label-text-color": {
+            "value": "{button.outlined-button.primary.label-text-color}",
+            "type": "color"
+          },
+          "hover-icon-color": {
+            "value": "{button.outlined-button.primary.icon-color}",
+            "type": "color"
           }
         },
         "secondary": {
@@ -1861,6 +1873,18 @@
             "type": "color"
           },
           "pressed-icon-color": {
+            "value": "{secondary.on-secondary-container}",
+            "type": "color"
+          },
+          "hover-state-layer-color": {
+            "value": "{secondary.secondary-high-shade-1}",
+            "type": "color"
+          },
+          "hover-label-text-color": {
+            "value": "{button.outlined-button.secondary.label-text-color}",
+            "type": "color"
+          },
+          "hover-icon-color": {
             "value": "{secondary.on-secondary-container}",
             "type": "color"
           }
@@ -1877,6 +1901,18 @@
           "pressed-icon-color": {
             "value": "{tertiary.on-tertiary-container}",
             "type": "color"
+          },
+          "hover-state-layer-color": {
+            "value": "{tertiary.tertiary-high-shade-1}",
+            "type": "color"
+          },
+          "hover-label-text-color": {
+            "value": "{tertiary.on-tertiary-container}",
+            "type": "color"
+          },
+          "hover-icon-color": {
+            "value": "{tertiary.on-tertiary-container}",
+            "type": "color"
           }
         },
         "neutral-variant": {
@@ -1889,6 +1925,18 @@
             "type": "color"
           },
           "pressed-icon-color": {
+            "value": "{tertiary.on-tertiary-container}",
+            "type": "color"
+          },
+          "hover-state-layer-color": {
+            "value": "{neutral-variant.neutral-variant-low-shade-1}",
+            "type": "color"
+          },
+          "hover-label-text-color": {
+            "value": "{neutral-variant.on-neutral-variant-container}",
+            "type": "color"
+          },
+          "hover-icon-color": {
             "value": "{neutral-variant.on-neutral-variant-container}",
             "type": "color"
           }
@@ -1989,36 +2037,36 @@
         }
       },
       "primary-high-shade-1": {
-        "value": "rgba(3,87,252,0.04)",
+        "value": "rgba(3,87,252,0.05)",
         "type": "color",
-        "description": "state layer",
         "attributes": {
           "root": "sys-color"
-        }
+        },
+        "description": "state layer"
       },
       "primary-high-shade-2": {
-        "value": "rgba(3,87,252,0.07)",
+        "value": "rgba(3,87,252,0.1)",
         "type": "color",
-        "description": "state layer",
         "attributes": {
           "root": "sys-color"
-        }
+        },
+        "description": "state layer"
       },
       "primary-low-shade-1": {
-        "value": "rgba(1,37,106,0.30)",
+        "value": "rgba(2,62,179,0.1)",
         "type": "color",
-        "description": "state layer",
         "attributes": {
           "root": "sys-color"
-        }
+        },
+        "description": "state layer"
       },
       "primary-low-shade-2": {
         "value": "rgba(2,62,179,0.5)",
         "type": "color",
-        "description": "state layer",
         "attributes": {
           "root": "sys-color"
-        }
+        },
+        "description": "state layer"
       },
       "disabled-1": {
         "value": "{primary.90}",
@@ -2070,7 +2118,7 @@
         }
       },
       "secondary-high-shade-2": {
-        "value": "rgba(0,24,88,0.07)",
+        "value": "rgba(0,24,88,0.09)",
         "type": "color",
         "attributes": {
           "root": "sys-color"
@@ -2133,14 +2181,14 @@
         }
       },
       "tertiary-high-shade-1": {
-        "value": "rgba(76,131,0,0.04)",
+        "value": "rgba(76,131,0,0.06)",
         "type": "color",
         "attributes": {
           "root": "sys-color"
         }
       },
       "tertiary-high-shade-2": {
-        "value": "rgba(76,131,0,0.07)",
+        "value": "rgba(76,131,0,0.08)",
         "type": "color",
         "attributes": {
           "root": "sys-color"
