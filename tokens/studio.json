@@ -257,8 +257,20 @@
         "value": "#CAD1D7",
         "type": "color"
       },
+      "94": {
+        "value": "#DFE2E5",
+        "type": "color"
+      },
       "95": {
         "value": "#EEF0F2",
+        "type": "color"
+      },
+      "96": {
+        "value": "#E9ECF0",
+        "type": "color"
+      },
+      "98": {
+        "value": "#F2F6FA",
         "type": "color"
       },
       "99": {
@@ -2267,13 +2279,6 @@
           "root": "sys-color"
         }
       },
-      "surface-variant": {
-        "value": "{neutral-variant.90}",
-        "type": "color",
-        "attributes": {
-          "root": "sys-color"
-        }
-      },
       "on-surface": {
         "value": "{neutral-variant.10}",
         "type": "color",
@@ -2281,14 +2286,35 @@
           "root": "sys-color"
         }
       },
-      "on-surface-variant": {
-        "value": "{neutral-variant.30}",
+      "surface-low": {
+        "value": "{neutral-variant.98}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
         }
       },
-      "on-surface-alt": {
+      "surface-container": {
+        "value": "{neutral-variant.96}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "surface-high": {
+        "value": "{neutral-variant.94}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "surface-highest": {
+        "value": "{neutral-variant.90}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "on-surface-variant": {
         "value": "{neutral-variant.30}",
         "type": "color",
         "attributes": {
@@ -2303,7 +2329,79 @@
         }
       },
       "inverse-surface": {
-        "value": "{neutral.20}",
+        "value": "{neutral-variant.10}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "inverse-on-surface": {
+        "value": "{neutral.95}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      }
+    },
+    "surfaces-Primary": {
+      "surface": {
+        "value": "{neutral.100}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "on-surface": {
+        "value": "{neutral-variant.10}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "surface-low": {
+        "value": "{neutral-variant.98}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "surface-container": {
+        "value": "{neutral-variant.96}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "surface-high": {
+        "value": "{neutral-variant.94}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "surface-highest": {
+        "value": "{neutral-variant.90}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "on-surface-variant": {
+        "value": "{neutral-variant.30}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "surface-tint": {
+        "value": "{primary.primary}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "inverse-surface": {
+        "value": "{neutral-variant.10}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
@@ -2337,7 +2435,7 @@
         }
       },
       "primary-container": {
-        "value": "{primary.90}",
+        "value": "{primary.95}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
@@ -2345,6 +2443,34 @@
       },
       "on-primary-container": {
         "value": "{primary.20}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "primary-fixed": {
+        "value": "{primary.90}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "on-primary-fixed": {
+        "value": "{primary.10}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "primary-fixed-dim": {
+        "value": "{primary.90}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "on-primary-fixed-dim": {
+        "value": "{primary.30}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
@@ -2418,7 +2544,35 @@
         }
       },
       "on-secondary-container": {
+        "value": "{secondary.20}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "secondary-fixed": {
+        "value": "{secondary.90}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "on-secondary-fixed": {
         "value": "{secondary.10}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "secondary-fixed-dim": {
+        "value": "{secondary.80}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "on-secondary-fixed-dim": {
+        "value": "{secondary.30}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
@@ -2481,7 +2635,7 @@
         }
       },
       "tertiary-container": {
-        "value": "{tertiary.90}",
+        "value": "{tertiary.95}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
@@ -2489,6 +2643,34 @@
       },
       "on-tertiary-container": {
         "value": "{tertiary.20}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "tertiary-fixed": {
+        "value": "{tertiary.90}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "on-tertiary-fixed": {
+        "value": "{tertiary.10}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "tertiary-fixed-dim": {
+        "value": "{tertiary.80}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "on-tertiary-fixed-dim": {
+        "value": "{tertiary.30}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
@@ -2544,21 +2726,49 @@
         }
       },
       "on-neutral-variant": {
-        "value": "{neutral-variant.99}",
+        "value": "{neutral-variant.100}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
         }
       },
       "neutral-variant-container": {
-        "value": "{neutral-variant.90}",
+        "value": "{neutral-variant.95}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
         }
       },
       "on-neutral-variant-container": {
+        "value": "{neutral-variant.20}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "neutral-variant-fixed": {
+        "value": "{neutral-variant.90}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "on-neutral-variant-fixed": {
         "value": "{neutral-variant.10}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "neutral-variant-fixed-dim": {
+        "value": "{neutral-variant.80}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "on-neutral-variant-fixed-dim": {
+        "value": "{neutral-variant.30}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
@@ -2589,10 +2799,6 @@
           "root": "sys-color"
         }
       },
-      "neutral-variant-label": {
-        "value": "{neutral-variant.10}",
-        "type": "color"
-      },
       "disabled-1": {
         "value": "{neutral-variant.95}",
         "type": "color"
@@ -2614,22 +2820,50 @@
           "root": "sys-color"
         }
       },
+      "on-error": {
+        "value": "{error.99}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
       "error-container": {
-        "value": "{error.90}",
+        "value": "{error.95}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
         }
       },
       "on-error-container": {
+        "value": "{error.20}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "error-fixed": {
+        "value": "{error.90}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "on-error-fixed": {
         "value": "{error.10}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
         }
       },
-      "on-error": {
-        "value": "{error.99}",
+      "error-fixed-dim": {
+        "value": "{error.80}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "on-error-fixed-dim": {
+        "value": "{error.30}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
@@ -2684,22 +2918,50 @@
           "root": "sys-color"
         }
       },
+      "on-info": {
+        "value": "{info.99}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
       "info-container": {
-        "value": "{info.90}",
+        "value": "{info.95}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
         }
       },
       "on-info-container": {
+        "value": "{info.20}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "info-fixed": {
+        "value": "{info.90}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "on-info-fixed": {
         "value": "{info.10}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
         }
       },
-      "on-info": {
-        "value": "{info.99}",
+      "info-fixed-dim": {
+        "value": "{info.80}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "on-info-fixed-dim": {
+        "value": "{info.20}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
@@ -2744,6 +3006,64 @@
       "info-accent": {
         "value": "{info.30}",
         "type": "color"
+      }
+    },
+    "success": {
+      "success": {
+        "value": "{success.50}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "on-success": {
+        "value": "{success.10}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "success-container": {
+        "value": "{success.95}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "on-success-container": {
+        "value": "{success.20}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "success-fixed": {
+        "value": "{success.90}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "on-success-fixed": {
+        "value": "{success.10}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "success-fixed-dim": {
+        "value": "{success.20}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "on-success-fixed-dim": {
+        "value": "{success.100}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
       }
     },
     "other": {
@@ -3048,7 +3368,6 @@
       },
       "$figmaStyleReferences": {
         "surfaces.surface": "S:31a03494afdd00d470236c723facb00c3c97b686,",
-        "surfaces.surface-variant": "S:2969cbd8170e9662eecc18588a54bce4bb95bcba,",
         "surfaces.on-surface": "S:a63a9f85ed260dcf1ef6b735d43e8b39df9875db,",
         "surfaces.on-surface-variant": "S:eb8d84e6b26bad5fb3e44b821b45a70cc61e27d6,",
         "surfaces.surface-tint": "S:24d85bfa5710bf90832996dbb40dc0c5fee1081f,",
@@ -3186,17 +3505,14 @@
         "button.filled-button.neutral-variant.container-color": "S:6696d2039c92aeee9f2436b8a0cd7144dc5d3e11,",
         "button.filled-button.neutral-variant.hover-state-layer-color": "S:7d1b91d8f4ff59b61c1f0243ed2592bd03cdb793,",
         "button.filled-button.neutral-variant.pressed-state-layer-color": "S:6e5a630761ac2524c2f19e86a726d07f278ea570,",
-        "neutral-variant.neutral-variant-label": "S:f4791a4f3aa55d4e3a3069eb3fcadfe413b7a678,",
         "button.filled-button.neutral-variant.label-text-color": "S:4c09729a557bcb9c47cd0a43690620f614ab0c0b,",
         "button.filled-button.secondary.icon-color": "S:e15aa54f919142e92ca070870b1ae43e339cf952,",
         "info.info-low-shade-1": "S:bf54833d8f7db436af87feb907907c3c007b7ac8,"
       },
       "$figmaVariableReferences": {
         "surfaces.surface": "e535fed4b31b206e1c0dbc75ec77597d1617eae2",
-        "surfaces.surface-variant": "f0d79caeb10d26cde400a288d79bc29d4bfb6d89",
         "surfaces.on-surface": "74e3a4e44ca6498094e81099a71ef6f4e823107d",
         "surfaces.on-surface-variant": "bde49599c7edde62c81688b4dbeae02a381a3c99",
-        "surfaces.on-surface-alt": "e983df9c578272403cc51466d99d02eb028c7dd0",
         "surfaces.surface-tint": "5e199331b78d3a664dbf12a602496de592bd8264",
         "surfaces.inverse-surface": "302155132c69c88470ad74a59d5af3e28f4911cc",
         "surfaces.inverse-on-surface": "539334f2ac9897fc78479d22a4b4780de4fea3fe",
@@ -3242,7 +3558,6 @@
         "neutral-variant.neutral-variant-high-shade-2": "9841d503776ab6e2579a06fe2cd773a960963e46",
         "neutral-variant.neutral-variant-low-shade-1": "b090a4fae65a1c2f301cc0fe7280c9ccef45a9f9",
         "neutral-variant.neutral-variant-low-shade-2": "552307ca6d24b374cdedb0d3f175e9ed038c7771",
-        "neutral-variant.neutral-variant-label": "43c1df7326166de068d9aa7dd7fb7f4625dcadd1",
         "neutral-variant.disabled-1": "40bd94547cd382bfcd03f2f0d250e376ef191a1c",
         "neutral-variant.disabled-2": "486f5c5596f8ae4abffc820ae4b53375e990a76f",
         "neutral-variant.neutral-variant-accent": "eff836eb8d62e64344e206dfeedd44bf6902fcae",
