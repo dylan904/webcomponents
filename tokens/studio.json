@@ -981,7 +981,7 @@
           }
         },
         "full": {
-          "value": "4",
+          "value": "100",
           "type": "borderRadius",
           "attributes": {
             "root": "sys"
