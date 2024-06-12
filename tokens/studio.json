@@ -342,7 +342,7 @@
         "type": "color"
       },
       "10": {
-        "value": "#6B5102",
+        "value": "#523E02",
         "type": "color",
         "description": "Correcting this color from whaite"
       },
@@ -488,7 +488,7 @@
         "type": "color"
       },
       "95": {
-        "value": "#E6F7ED",
+        "value": "#E6F7FD",
         "type": "color"
       },
       "99": {
@@ -2265,6 +2265,152 @@
         }
       }
     },
+    "alert": {
+      "tonal": {
+        "error": {
+          "container-color": {
+            "value": "{error.error-container}",
+            "type": "color"
+          },
+          "text-color": {
+            "value": "{error.on-error-container}",
+            "type": "color"
+          },
+          "icon-color": {
+            "value": "{error.on-error-container}",
+            "type": "color"
+          }
+        },
+        "warning": {
+          "container-color": {
+            "value": "{warning.warning-container}",
+            "type": "color"
+          },
+          "text-color": {
+            "value": "{warning.on-warning-container}",
+            "type": "color"
+          },
+          "icon-color": {
+            "value": "{warning.on-warning-container}",
+            "type": "color"
+          }
+        },
+        "success": {
+          "container-color": {
+            "value": "{success.success-container}",
+            "type": "color"
+          },
+          "text-color": {
+            "value": "{success.on-success-container}",
+            "type": "color"
+          },
+          "icon-color": {
+            "value": "{success.on-success-container}",
+            "type": "color"
+          }
+        },
+        "info": {
+          "container-color": {
+            "value": "{info.info-container}",
+            "type": "color"
+          },
+          "text-color": {
+            "value": "{info.on-info-container}",
+            "type": "color"
+          },
+          "icon-color": {
+            "value": "{info.on-info-container}",
+            "type": "color"
+          }
+        },
+        "neutral-variant": {
+          "container-color": {
+            "value": "{neutral-variant.neutral-variant-container}",
+            "type": "color"
+          },
+          "text-color": {
+            "value": "{neutral-variant.on-neutral-variant-container}",
+            "type": "color"
+          },
+          "icon-color": {
+            "value": "{neutral-variant.on-neutral-variant-container}",
+            "type": "color"
+          }
+        }
+      },
+      "filled": {
+        "error": {
+          "container-color": {
+            "value": "{error.error}",
+            "type": "color"
+          },
+          "text-color": {
+            "value": "{error.on-error}",
+            "type": "color"
+          },
+          "icon-color": {
+            "value": "{error.on-error}",
+            "type": "color"
+          }
+        },
+        "warning": {
+          "container-color": {
+            "value": "{warning.warning}",
+            "type": "color"
+          },
+          "text-color": {
+            "value": "{warning.on-warning}",
+            "type": "color"
+          },
+          "icon-color": {
+            "value": "{warning.on-warning}",
+            "type": "color"
+          }
+        },
+        "success": {
+          "container-color": {
+            "value": "{success.success}",
+            "type": "color"
+          },
+          "text-color": {
+            "value": "{success.on-success}",
+            "type": "color"
+          },
+          "icon-color": {
+            "value": "{success.on-success}",
+            "type": "color"
+          }
+        },
+        "info": {
+          "container-color": {
+            "value": "{info.info-fixed-dim}",
+            "type": "color"
+          },
+          "text-color": {
+            "value": "{info.on-info-fixed-dim}",
+            "type": "color"
+          },
+          "icon-color": {
+            "value": "{info.on-info-fixed-dim}",
+            "type": "color"
+          }
+        },
+        "neutral-variant": {
+          "container-color": {
+            "value": "{neutral-variant.neutral-variant-fixed-dim}",
+            "type": "color"
+          },
+          "text-color": {
+            "value": "{neutral-variant.on-neutral-variant-fixed-dim}",
+            "type": "color"
+          },
+          "icon-color": {
+            "value": "{neutral-variant.on-neutral-variant-fixed-dim}",
+            "type": "color"
+          }
+        }
+      }
+    },
     "Roboto": {
       "value": "{brand}",
       "type": "fontFamilies"
@@ -2768,7 +2914,7 @@
         }
       },
       "on-neutral-variant-fixed-dim": {
-        "value": "{neutral-variant.30}",
+        "value": "{neutral-variant.20}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
@@ -2912,14 +3058,14 @@
     },
     "info": {
       "info": {
-        "value": "{info.40}",
+        "value": "{info.30}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
         }
       },
       "on-info": {
-        "value": "{info.99}",
+        "value": "{info.100}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
@@ -2954,14 +3100,14 @@
         }
       },
       "info-fixed-dim": {
-        "value": "{info.80}",
+        "value": "{info.60}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
         }
       },
       "on-info-fixed-dim": {
-        "value": "{info.20}",
+        "value": "{info.10}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
@@ -3060,6 +3206,78 @@
       },
       "on-success-fixed-dim": {
         "value": "{success.100}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "success-accent": {
+        "value": "{success.40}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      }
+    },
+    "warning": {
+      "warning": {
+        "value": "{warning.50}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "on-warning": {
+        "value": "{warning.0}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "warning-container": {
+        "value": "{warning.90}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "on-warning-container": {
+        "value": "{warning.20}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "warning-fixed": {
+        "value": "{warning.80}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "on-warning-fixed": {
+        "value": "{warning.10}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "warning-fixed-dim": {
+        "value": "{warning.70}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "on-warning-fixed-dim": {
+        "value": "{warning.10}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "warning-accent": {
+        "value": "{warning.40}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
