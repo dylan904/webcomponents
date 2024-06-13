@@ -2936,7 +2936,7 @@
         "type": "color"
       },
       "info-accent": {
-        "value": "{info.30}",
+        "value": "{info.40}",
         "type": "color"
       }
     },
@@ -2996,6 +2996,75 @@
         "attributes": {
           "root": "sys-color"
         }
+      },
+      "on-success-accent": {
+        "value": "{success.40}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      }
+    },
+    "warning": {
+      "warning": {
+        "value": "{warning.40}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "on-warning": {
+        "value": "{warning.99}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "warning-container": {
+        "value": "{warning.95}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "on-warning-container": {
+        "value": "{warning.20}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "warning-fixed": {
+        "value": "{warning.90}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "on-warning-fixed": {
+        "value": "{warning.10}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "warning-fixed-dim": {
+        "value": "{warning.80}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "on-warning-fixed-dim": {
+        "value": "{warning.30}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "warning-accent": {
+        "value": "{warning.60}",
+        "type": "color"
       }
     },
     "other": {
