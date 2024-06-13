@@ -342,7 +342,7 @@
         "type": "color"
       },
       "10": {
-        "value": "#6B5102",
+        "value": "#4D3501",
         "type": "color",
         "description": "Correcting this color from whaite"
       },
@@ -488,7 +488,7 @@
         "type": "color"
       },
       "95": {
-        "value": "#E6F7ED",
+        "value": "#DAF4FD",
         "type": "color"
       },
       "99": {
@@ -1014,6 +1014,13 @@
       "x-space": {
         "xsmall": {
           "value": "8",
+          "type": "spacing",
+          "attributes": {
+            "root": "ref"
+          }
+        },
+        "xxsmall": {
+          "value": "4",
           "type": "spacing",
           "attributes": {
             "root": "ref"
@@ -2265,6 +2272,152 @@
         }
       }
     },
+    "alert": {
+      "tonal": {
+        "error": {
+          "container-color": {
+            "value": "{error.error-container}",
+            "type": "color"
+          },
+          "text-color": {
+            "value": "{error.on-error-container}",
+            "type": "color"
+          },
+          "icon-color": {
+            "value": "{error.on-error-container}",
+            "type": "color"
+          }
+        },
+        "warning": {
+          "container-color": {
+            "value": "{warning.warning-container}",
+            "type": "color"
+          },
+          "text-color": {
+            "value": "{warning.on-warning-container}",
+            "type": "color"
+          },
+          "icon-color": {
+            "value": "{warning.on-warning-container}",
+            "type": "color"
+          }
+        },
+        "success": {
+          "container-color": {
+            "value": "{success.success-container}",
+            "type": "color"
+          },
+          "text-color": {
+            "value": "{success.on-success-container}",
+            "type": "color"
+          },
+          "icon-color": {
+            "value": "{success.on-success-container}",
+            "type": "color"
+          }
+        },
+        "info": {
+          "container-color": {
+            "value": "{info.info-container}",
+            "type": "color"
+          },
+          "text-color": {
+            "value": "{info.on-info-container}",
+            "type": "color"
+          },
+          "icon-color": {
+            "value": "{info.on-info-container}",
+            "type": "color"
+          }
+        },
+        "neutral-variant": {
+          "container-color": {
+            "value": "{neutral-variant.neutral-variant-container}",
+            "type": "color"
+          },
+          "text-color": {
+            "value": "{neutral-variant.on-neutral-variant-container}",
+            "type": "color"
+          },
+          "icon-color": {
+            "value": "{neutral-variant.on-neutral-variant-container}",
+            "type": "color"
+          }
+        }
+      },
+      "filled": {
+        "error": {
+          "container-color": {
+            "value": "{error.error}",
+            "type": "color"
+          },
+          "text-color": {
+            "value": "{error.on-error}",
+            "type": "color"
+          },
+          "icon-color": {
+            "value": "{error.on-error}",
+            "type": "color"
+          }
+        },
+        "warning": {
+          "container-color": {
+            "value": "{warning.warning}",
+            "type": "color"
+          },
+          "text-color": {
+            "value": "{warning.on-warning}",
+            "type": "color"
+          },
+          "icon-color": {
+            "value": "{warning.on-warning}",
+            "type": "color"
+          }
+        },
+        "success": {
+          "container-color": {
+            "value": "{success.success}",
+            "type": "color"
+          },
+          "text-color": {
+            "value": "{success.on-success}",
+            "type": "color"
+          },
+          "icon-color": {
+            "value": "{success.on-success}",
+            "type": "color"
+          }
+        },
+        "info": {
+          "container-color": {
+            "value": "{info.info-fixed-dim}",
+            "type": "color"
+          },
+          "text-color": {
+            "value": "{info.on-info-fixed-dim}",
+            "type": "color"
+          },
+          "icon-color": {
+            "value": "{info.on-info-fixed-dim}",
+            "type": "color"
+          }
+        },
+        "neutral-variant": {
+          "container-color": {
+            "value": "{neutral-variant.neutral-variant-fixed-dim}",
+            "type": "color"
+          },
+          "text-color": {
+            "value": "{neutral-variant.on-neutral-variant-fixed-dim}",
+            "type": "color"
+          },
+          "icon-color": {
+            "value": "{neutral-variant.on-neutral-variant-fixed-dim}",
+            "type": "color"
+          }
+        }
+      }
+    },
     "Roboto": {
       "value": "{brand}",
       "type": "fontFamilies"
@@ -3007,21 +3160,21 @@
     },
     "warning": {
       "warning": {
-        "value": "{warning.40}",
+        "value": "{warning.50}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
         }
       },
       "on-warning": {
-        "value": "{warning.99}",
+        "value": "{warning.10}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
         }
       },
       "warning-container": {
-        "value": "{warning.95}",
+        "value": "{warning.90}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
@@ -3035,7 +3188,7 @@
         }
       },
       "warning-fixed": {
-        "value": "{warning.90}",
+        "value": "{warning.70}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
@@ -3049,14 +3202,14 @@
         }
       },
       "warning-fixed-dim": {
-        "value": "{warning.80}",
+        "value": "{warning.50}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
         }
       },
       "on-warning-fixed-dim": {
-        "value": "{warning.30}",
+        "value": "{warning.10}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
