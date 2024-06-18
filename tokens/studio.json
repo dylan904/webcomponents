@@ -1049,7 +1049,14 @@
     },
     "shape": {
       "corner": {
-        "extra-small": {
+        "xx-small": {
+          "value": "2",
+          "type": "borderRadius",
+          "attributes": {
+            "root": "sys"
+          }
+        },
+        "x-smal": {
           "value": "4",
           "type": "borderRadius",
           "attributes": {
@@ -1630,11 +1637,11 @@
             "type": "color"
           },
           "disabled-label-text-color": {
-            "value": "{button.outlined-button.neutral-variant.disabled-outline-color}",
+            "value": "{button.outlined-button.neutral-variant.disabled-icon-color}",
             "type": "color"
           },
           "disabled-icon-color": {
-            "value": "{button.outlined-button.neutral-variant.disabled-label-text-color}",
+            "value": "{button.outlined-button.neutral-variant.disabled-outline-color}",
             "type": "color"
           },
           "disabled-outline-color": {
@@ -2527,12 +2534,24 @@
         "value": "{surfaces.on-surface-variant}",
         "type": "color"
       },
+      "label-text-color": {
+        "value": "{surfaces.on-surface-variant}",
+        "type": "color"
+      },
       "input-icon-color": {
         "value": "{surfaces.on-surface-variant}",
         "type": "color"
       },
       "input-border-default": {
-        "value": "{other.border-default-color}",
+        "value": "{other.outline}",
+        "type": "color"
+      },
+      "input-border-disabled": {
+        "value": "{neutral-variant.disabled-2}",
+        "type": "color"
+      },
+      "input-label-text-disabled": {
+        "value": "{neutral-variant.disabled-2}",
         "type": "color"
       }
     },
@@ -2629,6 +2648,116 @@
       },
       "on-info": {
         "value": "{info.on-info-fixed-dim}",
+        "type": "color"
+      }
+    },
+    "checkbox": {
+      "container-color": {
+        "value": "{primary.primary}",
+        "type": "color"
+      },
+      "label-icon-color": {
+        "value": "{primary.on-primary}",
+        "type": "color"
+      },
+      "hover-state-layer-color": {
+        "value": "{primary.primary-high-shade-2}",
+        "type": "color"
+      },
+      "pressed-state-layer-color": {
+        "value": "{primary.primary-low-shade-1}",
+        "type": "color"
+      },
+      "disabled-label-text-color": {
+        "value": "{button.outlined-button.neutral-variant.disabled-outline-color}",
+        "type": "color"
+      },
+      "disabled-icon-color": {
+        "value": "{button.outlined-button.neutral-variant.disabled-label-text-color}",
+        "type": "color"
+      },
+      "disabled-outline-color": {
+        "value": "{neutral-variant.disabled-2}",
+        "type": "color"
+      },
+      "disabled-container-color": {
+        "value": "{neutral-variant.disabled-2}",
+        "type": "color"
+      }
+    },
+    "radiobutton": {
+      "container-color": {
+        "value": "{primary.primary}",
+        "type": "color"
+      },
+      "label-icon-color": {
+        "value": "{primary.on-primary}",
+        "type": "color"
+      },
+      "hover-state-layer-color": {
+        "value": "{primary.primary-high-shade-2}",
+        "type": "color"
+      },
+      "pressed-state-layer-color": {
+        "value": "{primary.primary-low-shade-1}",
+        "type": "color"
+      },
+      "disabled-label-text-color": {
+        "value": "{button.outlined-button.neutral-variant.disabled-outline-color}",
+        "type": "color"
+      },
+      "disabled-icon-color": {
+        "value": "{button.outlined-button.neutral-variant.disabled-label-text-color}",
+        "type": "color"
+      },
+      "disabled-outline-color": {
+        "value": "{neutral-variant.disabled-2}",
+        "type": "color"
+      },
+      "disabled-container-color": {
+        "value": "{neutral-variant.disabled-2}",
+        "type": "color"
+      }
+    },
+    "Switch": {
+      "container-color": {
+        "value": "{primary.primary}",
+        "type": "color"
+      },
+      "label-icon-color": {
+        "value": "{primary.on-primary}",
+        "type": "color"
+      },
+      "handle-icon-color": {
+        "value": "{button.outlined-button.secondary.icon-color}",
+        "type": "color"
+      },
+      "hover-state-layer-color": {
+        "value": "{primary.primary-low-shade-1}",
+        "type": "color"
+      },
+      "pressed-state-layer-color": {
+        "value": "{primary.primary-high-shade-2}",
+        "type": "color"
+      },
+      "disabled-label-text-color": {
+        "value": "{button.outlined-button.neutral-variant.disabled-outline-color}",
+        "type": "color"
+      },
+      "disabled-icon-color": {
+        "value": "{button.outlined-button.neutral-variant.disabled-label-text-color}",
+        "type": "color"
+      },
+      "disabled-outline-color": {
+        "value": "{neutral-variant.disabled-2}",
+        "type": "color"
+      },
+      "disabled-container-color": {
+        "value": "{neutral-variant.disabled-2}",
+        "type": "color"
+      },
+      "disabled-handle-color": {
+        "value": "{neutral-variant.disabled-1}",
         "type": "color"
       }
     }
@@ -2771,7 +2900,7 @@
         }
       },
       "primary-high-shade-1": {
-        "value": "rgba(3,87,252,0.05)",
+        "value": "rgba(3,87,252,0.08)",
         "type": "color",
         "attributes": {
           "root": "sys-color"
@@ -2779,7 +2908,7 @@
         "description": "state layer"
       },
       "primary-high-shade-2": {
-        "value": "rgba(3,87,252,0.1)",
+        "value": "rgba(3,87,252,0.15)",
         "type": "color",
         "attributes": {
           "root": "sys-color"
@@ -4321,8 +4450,11 @@
         "alert.filled.neutral-variant.icon-color": "0296415544b5665dd4fe140069f85ab0cc9cb5cc",
         "input.input-container": "296e6be629b8fbb5c3d1ec402b54e1c4d04d38ac",
         "input.input-text-color": "08b7f96471e67954829b55060e23d7b63f22e089",
+        "input.label-text-color": "4b4fa195ddd956e3eb7529330a765ea0426f2547",
         "input.input-icon-color": "a887d9647655f3f9fcd2b9331583dfd3f6f7a9f4",
         "input.input-border-default": "466f109f7859f75e7c3480f348a77d579f6afe19",
+        "input.input-border-disabled": "549bd6878f7eb2ba278583cfcded05ad71ec9e52",
+        "input.input-label-text-disabled": "87fa45ad7d6eb6507662966fa7e25d6dd153938c",
         "accordion.outline-color": "e05c10bdeb16996409e544afd5738d96b894c20f",
         "accordion.accordion-container": "e3fe1f10185b678233ef97e586be075cc256f642",
         "accordion.label-text-color": "6c9a2e0b754f7c023665ab959d19124ffb8a6aa0",
@@ -4346,6 +4478,32 @@
         "badge.on-neutral-variant": "617db0d8c8394c3184c9a1a86edc050a87e0c860",
         "badge.info": "75a122cc83882a8d9b6393ee91fd3c30f1290da7",
         "badge.on-info": "cbbc1d21044f91442429347b80db7a0a0adeb85e",
+        "checkbox.container-color": "05e98eafae0d44f67ac4c620610130c7e65e50e5",
+        "checkbox.label-icon-color": "6b9d90ca38bc5e1016c6dc9190c2d8a80d26280a",
+        "checkbox.hover-state-layer-color": "b68e0f2b0abda9bc59a4889f41b4701c1dca01c7",
+        "checkbox.pressed-state-layer-color": "b867c50c1c3fcdca27e5d66e732b94ad6f1310a5",
+        "checkbox.disabled-label-text-color": "d5e547351f47b966bdce1c63d6f6fe85f3b88ae1",
+        "checkbox.disabled-icon-color": "4fe3245e4f4adb64ca4ca019f9e6abd365cf4827",
+        "checkbox.disabled-outline-color": "1b9f5fd35858ef512a5e8f8200eba5afebb25d22",
+        "checkbox.disabled-container-color": "352395e250958e4472488af7ac0f3e127d687db1",
+        "radiobutton.container-color": "39c113bf49f0391102354b25df12f1b4a74a8dc4",
+        "radiobutton.label-icon-color": "71b1483f885c403122d976e61d2707963d4fef40",
+        "radiobutton.hover-state-layer-color": "2dee925120ec77d0a9dc55ac38f65a331ba09b4a",
+        "radiobutton.pressed-state-layer-color": "8c709b01c5634fcbb3bcbd25c2011c505b18e19c",
+        "radiobutton.disabled-label-text-color": "6bc26b1eef7eebd1ff94c6cabd08124adfe78a54",
+        "radiobutton.disabled-icon-color": "a833c9be127eb029ce9261af66c864dafec9599f",
+        "radiobutton.disabled-outline-color": "b1e83922fba3bcc5bfd1aa00ff1e1bef74a6f528",
+        "radiobutton.disabled-container-color": "8d973e1d205d51cab9b799a742dc8e7882a744ef",
+        "Switch.container-color": "27aa7aa694bb06bb2f80a95bd418401c9ba2402e",
+        "Switch.label-icon-color": "02e870728d449601ebcd9ada44f177c41eab3852",
+        "Switch.handle-icon-color": "aeecfa8de4828e8507d98e01b96e5915fc963b14",
+        "Switch.hover-state-layer-color": "25c52e399cfeb5c973ed005bb07bf94118e5b673",
+        "Switch.pressed-state-layer-color": "d9b332748544e879b17a8dafcea0696cc71f35de",
+        "Switch.disabled-label-text-color": "ec15a48107637ed13613391290ff7e262bc0309e",
+        "Switch.disabled-icon-color": "de5e04f200dc5a67417c8f86acf68346314086f0",
+        "Switch.disabled-outline-color": "856c752a45157356314f15b62c177c56404adf12",
+        "Switch.disabled-container-color": "7e92facffaee4893f5f30aea2ba85efc508d1e9c",
+        "Switch.disabled-handle-color": "95eec1ba5592a11700ceacda5a708dc18a50cf3c",
         "space-0": "669c8920c5cc7acf8f99a72a1e86d7850958d42e",
         "space-1": "7dd1e279dff928e7f12a202e23f51467e7179f0a",
         "space-2": "14a81bdd035312f07eeb1579535f736c746c031d",
@@ -4356,7 +4514,8 @@
         "space-7": "011b38fbb8b73bd15ff4a58747ef8c24faa1dc8a",
         "space-8": "05311d80d34c869329ad016c8b75b8038500fadf",
         "space-9": "99161d8d931a405c2e0992e3d51d02d598048594",
-        "shape.corner.extra-small": "d25c6ca4f974f9daa2073f4a581e9ad68f25775e",
+        "shape.corner.xx-small": "d25c6ca4f974f9daa2073f4a581e9ad68f25775e",
+        "shape.corner.x-smal": "7fa733ea302d7616a62f214ec711d9591d5a94af",
         "shape.corner.small": "5748beb5d614818ddc8d01d5625dffb39ddff3cb",
         "shape.corner.medium": "9e65eb28ab0d0496c21cebec1a5d298d58dc85d8",
         "shape.corner.large": "fd62259a475f3dc2ea1484b801afff732afa13a1",
@@ -4713,8 +4872,11 @@
         "alert.filled.neutral-variant.icon-color": "0296415544b5665dd4fe140069f85ab0cc9cb5cc",
         "input.input-container": "296e6be629b8fbb5c3d1ec402b54e1c4d04d38ac",
         "input.input-text-color": "08b7f96471e67954829b55060e23d7b63f22e089",
+        "input.label-text-color": "4b4fa195ddd956e3eb7529330a765ea0426f2547",
         "input.input-icon-color": "a887d9647655f3f9fcd2b9331583dfd3f6f7a9f4",
         "input.input-border-default": "466f109f7859f75e7c3480f348a77d579f6afe19",
+        "input.input-border-disabled": "549bd6878f7eb2ba278583cfcded05ad71ec9e52",
+        "input.input-label-text-disabled": "87fa45ad7d6eb6507662966fa7e25d6dd153938c",
         "accordion.outline-color": "e05c10bdeb16996409e544afd5738d96b894c20f",
         "accordion.accordion-container": "e3fe1f10185b678233ef97e586be075cc256f642",
         "accordion.label-text-color": "6c9a2e0b754f7c023665ab959d19124ffb8a6aa0",
@@ -4738,6 +4900,32 @@
         "badge.on-neutral-variant": "617db0d8c8394c3184c9a1a86edc050a87e0c860",
         "badge.info": "75a122cc83882a8d9b6393ee91fd3c30f1290da7",
         "badge.on-info": "cbbc1d21044f91442429347b80db7a0a0adeb85e",
+        "checkbox.container-color": "05e98eafae0d44f67ac4c620610130c7e65e50e5",
+        "checkbox.label-icon-color": "6b9d90ca38bc5e1016c6dc9190c2d8a80d26280a",
+        "checkbox.hover-state-layer-color": "b68e0f2b0abda9bc59a4889f41b4701c1dca01c7",
+        "checkbox.pressed-state-layer-color": "b867c50c1c3fcdca27e5d66e732b94ad6f1310a5",
+        "checkbox.disabled-label-text-color": "d5e547351f47b966bdce1c63d6f6fe85f3b88ae1",
+        "checkbox.disabled-icon-color": "4fe3245e4f4adb64ca4ca019f9e6abd365cf4827",
+        "checkbox.disabled-outline-color": "1b9f5fd35858ef512a5e8f8200eba5afebb25d22",
+        "checkbox.disabled-container-color": "352395e250958e4472488af7ac0f3e127d687db1",
+        "radiobutton.container-color": "39c113bf49f0391102354b25df12f1b4a74a8dc4",
+        "radiobutton.label-icon-color": "71b1483f885c403122d976e61d2707963d4fef40",
+        "radiobutton.hover-state-layer-color": "2dee925120ec77d0a9dc55ac38f65a331ba09b4a",
+        "radiobutton.pressed-state-layer-color": "8c709b01c5634fcbb3bcbd25c2011c505b18e19c",
+        "radiobutton.disabled-label-text-color": "6bc26b1eef7eebd1ff94c6cabd08124adfe78a54",
+        "radiobutton.disabled-icon-color": "a833c9be127eb029ce9261af66c864dafec9599f",
+        "radiobutton.disabled-outline-color": "b1e83922fba3bcc5bfd1aa00ff1e1bef74a6f528",
+        "radiobutton.disabled-container-color": "8d973e1d205d51cab9b799a742dc8e7882a744ef",
+        "Switch.container-color": "27aa7aa694bb06bb2f80a95bd418401c9ba2402e",
+        "Switch.label-icon-color": "02e870728d449601ebcd9ada44f177c41eab3852",
+        "Switch.handle-icon-color": "aeecfa8de4828e8507d98e01b96e5915fc963b14",
+        "Switch.hover-state-layer-color": "25c52e399cfeb5c973ed005bb07bf94118e5b673",
+        "Switch.pressed-state-layer-color": "d9b332748544e879b17a8dafcea0696cc71f35de",
+        "Switch.disabled-label-text-color": "ec15a48107637ed13613391290ff7e262bc0309e",
+        "Switch.disabled-icon-color": "de5e04f200dc5a67417c8f86acf68346314086f0",
+        "Switch.disabled-outline-color": "856c752a45157356314f15b62c177c56404adf12",
+        "Switch.disabled-container-color": "7e92facffaee4893f5f30aea2ba85efc508d1e9c",
+        "Switch.disabled-handle-color": "95eec1ba5592a11700ceacda5a708dc18a50cf3c",
         "space-0": "669c8920c5cc7acf8f99a72a1e86d7850958d42e",
         "space-1": "7dd1e279dff928e7f12a202e23f51467e7179f0a",
         "space-2": "14a81bdd035312f07eeb1579535f736c746c031d",
@@ -4748,7 +4936,8 @@
         "space-7": "011b38fbb8b73bd15ff4a58747ef8c24faa1dc8a",
         "space-8": "05311d80d34c869329ad016c8b75b8038500fadf",
         "space-9": "99161d8d931a405c2e0992e3d51d02d598048594",
-        "shape.corner.extra-small": "d25c6ca4f974f9daa2073f4a581e9ad68f25775e",
+        "shape.corner.xx-small": "d25c6ca4f974f9daa2073f4a581e9ad68f25775e",
+        "shape.corner.x-smal": "7fa733ea302d7616a62f214ec711d9591d5a94af",
         "shape.corner.small": "5748beb5d614818ddc8d01d5625dffb39ddff3cb",
         "shape.corner.medium": "9e65eb28ab0d0496c21cebec1a5d298d58dc85d8",
         "shape.corner.large": "fd62259a475f3dc2ea1484b801afff732afa13a1",
