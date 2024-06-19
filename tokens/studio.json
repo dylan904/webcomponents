@@ -1004,6 +1004,16 @@
         "value": "108",
         "type": "paragraphSpacing"
       }
+    },
+    "Placeholder": {
+      "Large": {
+        "value": {
+          "fontFamily": "{plain}",
+          "fontSize": "{fontSize.3}",
+          "fontWeight": "{weight.regular}"
+        },
+        "type": "typography"
+      }
     }
   },
   "core/dimensions": {
@@ -2545,16 +2555,16 @@
         "value": "{surfaces.on-surface-variant}",
         "type": "color"
       },
-      "label-text-color": {
-        "value": "{surfaces.on-surface-variant}",
-        "type": "color"
-      },
       "input-icon-color": {
         "value": "{surfaces.on-surface-variant}",
         "type": "color"
       },
+      "input-text-placeholder-color": {
+        "value": "{surfaces.on-input-container-placeholder-text}",
+        "type": "color"
+      },
       "input-border-default": {
-        "value": "{other.outline-variant}",
+        "value": "{other.outline}",
         "type": "color"
       },
       "input-border-disabled": {
@@ -2575,6 +2585,10 @@
       },
       "input-focus": {
         "value": "{other.focussed-ring}",
+        "type": "color"
+      },
+      "label-text-color": {
+        "value": "{surfaces.on-surface-variant}",
         "type": "color"
       }
     },
@@ -2997,6 +3011,13 @@
       },
       "inverse-on-surface": {
         "value": "{neutral.95}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "on-input-container-placeholder-text": {
+        "value": "{neutral.50}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
@@ -4201,6 +4222,7 @@
         "surfaces.surface-tint": "5e199331b78d3a664dbf12a602496de592bd8264",
         "surfaces.inverse-surface": "302155132c69c88470ad74a59d5af3e28f4911cc",
         "surfaces.inverse-on-surface": "539334f2ac9897fc78479d22a4b4780de4fea3fe",
+        "surfaces.on-input-container-placeholder-text": "c1bbf754efa5798978ac2478d70f1ec66967f36a",
         "primary.primary": "90818b8172a452031bc65d82a6cb22bec5aeffe6",
         "primary.on-primary": "d2702b178c34d329425e0e568e0a2ac6351f65d4",
         "primary.primary-container": "aa781e2b3c6c7222b1fd9128a1f3f634318462d6",
@@ -4617,7 +4639,7 @@
         "alert.filled.neutral-variant.icon-color": "0296415544b5665dd4fe140069f85ab0cc9cb5cc",
         "input.input-container": "296e6be629b8fbb5c3d1ec402b54e1c4d04d38ac",
         "input.input-text-color": "08b7f96471e67954829b55060e23d7b63f22e089",
-        "input.label-text-color": "4b4fa195ddd956e3eb7529330a765ea0426f2547",
+        "input.input-text-placeholder-color": "54cf2862afff2a79bea7e8c7ff01b3ffe1c44b36",
         "input.input-icon-color": "a887d9647655f3f9fcd2b9331583dfd3f6f7a9f4",
         "input.input-border-default": "466f109f7859f75e7c3480f348a77d579f6afe19",
         "input.input-border-disabled": "549bd6878f7eb2ba278583cfcded05ad71ec9e52",
@@ -4724,9 +4746,9 @@
         "shape.corner.extra-large": "9dff07765d691e236b5ab43b695bac9130cdecd8",
         "shape.corner.full": "8e166d62f156134399bc98860cc08b8196a1602c",
         "shape.corner.none": "f7201e352eb85019b3e30b71e20f5aa4e58003c8",
+        "shape.corner.fucussed-fix-1": "c10103b2031dacbdf0b39c9a3b878e02c4db5385",
         "borderWidth-1": "6e926e09701fb5e1b12c9cd7d9c389181af2d256",
-        "borderWidth-2": "9ead178b7d19fbeaaa28d09b0af06a8a519e009e",
-        "shape.corner.fucussed-fix-1": "c10103b2031dacbdf0b39c9a3b878e02c4db5385"
+        "borderWidth-2": "9ead178b7d19fbeaaa28d09b0af06a8a519e009e"
       },
       "$figmaCollectionId": "VariableCollectionId:11241:7708",
       "$figmaModeId": "11241:0"
@@ -5076,7 +5098,7 @@
         "alert.filled.neutral-variant.icon-color": "0296415544b5665dd4fe140069f85ab0cc9cb5cc",
         "input.input-container": "296e6be629b8fbb5c3d1ec402b54e1c4d04d38ac",
         "input.input-text-color": "08b7f96471e67954829b55060e23d7b63f22e089",
-        "input.label-text-color": "4b4fa195ddd956e3eb7529330a765ea0426f2547",
+        "input.input-text-placeholder-color": "54cf2862afff2a79bea7e8c7ff01b3ffe1c44b36",
         "input.input-icon-color": "a887d9647655f3f9fcd2b9331583dfd3f6f7a9f4",
         "input.input-border-default": "466f109f7859f75e7c3480f348a77d579f6afe19",
         "input.input-border-disabled": "549bd6878f7eb2ba278583cfcded05ad71ec9e52",
@@ -5183,9 +5205,9 @@
         "shape.corner.extra-large": "9dff07765d691e236b5ab43b695bac9130cdecd8",
         "shape.corner.full": "8e166d62f156134399bc98860cc08b8196a1602c",
         "shape.corner.none": "f7201e352eb85019b3e30b71e20f5aa4e58003c8",
+        "shape.corner.fucussed-fix-1": "c10103b2031dacbdf0b39c9a3b878e02c4db5385",
         "borderWidth-1": "6e926e09701fb5e1b12c9cd7d9c389181af2d256",
-        "borderWidth-2": "9ead178b7d19fbeaaa28d09b0af06a8a519e009e",
-        "shape.corner.fucussed-fix-1": "c10103b2031dacbdf0b39c9a3b878e02c4db5385"
+        "borderWidth-2": "9ead178b7d19fbeaaa28d09b0af06a8a519e009e"
       },
       "$figmaCollectionId": "VariableCollectionId:11241:7708",
       "$figmaModeId": "11241:1"
