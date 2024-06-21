@@ -2946,7 +2946,11 @@
           "type": "color"
         },
         "handle-color": {
-          "value": "{neutral-variant.90}",
+          "value": "{neutral-variant.70}",
+          "type": "color"
+        },
+        "border-color": {
+          "value": "{neutral-variant.70}",
           "type": "color"
         },
         "hover-state-layer-color": {
