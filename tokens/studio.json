@@ -737,6 +737,51 @@
         "type": "typography"
       }
     },
+    "link-body": {
+      "small": {
+        "value": {
+          "fontFamily": "{plain}",
+          "fontWeight": "{weight.regular}",
+          "lineHeight": "{lineHeights.0}",
+          "fontSize": "{fontSize.1}",
+          "letterSpacing": "{letterSpacing.1}",
+          "paragraphSpacing": "{paragraphSpacing.1}",
+          "paragraphIndent": "0px",
+          "textCase": "none",
+          "textDecoration": "{Link text}"
+        },
+        "type": "typography",
+        "description": "0.4"
+      },
+      "medium": {
+        "value": {
+          "fontFamily": "{plain}",
+          "fontWeight": "{weight.regular}",
+          "lineHeight": "{lineHeights.0}",
+          "fontSize": "{fontSize.2}",
+          "letterSpacing": "{letterSpacing.5}",
+          "paragraphSpacing": "{paragraphSpacing.2}",
+          "paragraphIndent": "0px",
+          "textCase": "none",
+          "textDecoration": "{Link text}"
+        },
+        "type": "typography"
+      },
+      "large": {
+        "value": {
+          "fontFamily": "{plain}",
+          "fontWeight": "{weight.regular}",
+          "lineHeight": "{lineHeights.1}",
+          "fontSize": "{fontSize.3}",
+          "letterSpacing": "{letterSpacing.4}",
+          "paragraphSpacing": "{paragraphSpacing.3}",
+          "paragraphIndent": "0px",
+          "textCase": "none",
+          "textDecoration": "{Link text}"
+        },
+        "type": "typography"
+      }
+    },
     "label": {
       "small": {
         "value": {
@@ -1014,6 +1059,14 @@
         },
         "type": "typography"
       }
+    },
+    "link-underlined": {
+      "value": "underlined",
+      "type": "textCase"
+    },
+    "Link text": {
+      "value": "underline",
+      "type": "textDecoration"
     }
   },
   "core/dimensions": {
@@ -2810,6 +2863,44 @@
         "type": "color"
       }
     },
+    "pagination": {
+      "pressed-container-color": {
+        "value": "{secondary.on-secondary-fixed-dim}",
+        "type": "color"
+      },
+      "pressed-label-text-color": {
+        "value": "{secondary.on-secondary}",
+        "type": "color"
+      },
+      "hover-state-layer-color": {
+        "value": "{secondary.secondary-high-shade-2}",
+        "type": "color"
+      },
+      "label-text-color": {
+        "value": "{secondary.secondary-fixed-dim}",
+        "type": "color"
+      },
+      "label-icon-color": {
+        "value": "{secondary.secondary-fixed-dim}",
+        "type": "color"
+      },
+      "hover-label-icon-color-": {
+        "value": "{secondary.on-secondary-fixed}",
+        "type": "color"
+      },
+      "hover-label-text-color": {
+        "value": "{secondary.on-secondary-fixed}",
+        "type": "color"
+      },
+      "disabled-label-text-color": {
+        "value": "{button.outlined-button.secondary.disabled-outline-color}",
+        "type": "color"
+      },
+      "disabled-container-color": {
+        "value": "{secondary.secondary-high-shade-1}",
+        "type": "color"
+      }
+    },
     "switch": {
       "primary": {
         "container-color": {
@@ -2922,7 +3013,7 @@
         }
       },
       "secondary": {
-        "container-color": {
+        "active-container-color": {
           "value": "{secondary.secondary}",
           "type": "color"
         },
@@ -2935,7 +3026,7 @@
           "type": "color"
         },
         "disabled-container-color": {
-          "value": "{secondary.disabled-1}",
+          "value": "{secondary.secondary-high-shade-2}",
           "type": "color"
         },
         "hover-state-layer-color": {
@@ -4756,6 +4847,15 @@
         "radiobutton.disabled-icon-color": "a833c9be127eb029ce9261af66c864dafec9599f",
         "radiobutton.disabled-outline-color": "b1e83922fba3bcc5bfd1aa00ff1e1bef74a6f528",
         "radiobutton.disabled-container-color": "8d973e1d205d51cab9b799a742dc8e7882a744ef",
+        "pagination.pressed-container-color": "f6848c5288713d80585f53e71c46e3194d428d10",
+        "pagination.pressed-label-text-color": "008438d34fa0d6e3619bad2baa95efcfb8a67b8e",
+        "pagination.hover-state-layer-color": "2f4618cf252ce956d0f1c0634d7fbdaf96607505",
+        "pagination.label-text-color": "e9b261ece470701bfc4f7b1b269688546f8e547e",
+        "pagination.label-icon-color": "008438d34fa0d6e3619bad2baa95efcfb8a67b8e",
+        "pagination.hover-label-icon-color-": "828869d6b2d336b88f83f8afeee2ca55966e99f0",
+        "pagination.hover-label-text-color": "bf98c600e147f570e779f77a917cf464bc622eae",
+        "pagination.disabled-label-text-color": "c1e1291aaee4bbdc84bd2044272d563f06af1bd9",
+        "pagination.disabled-container-color": "c6d7517a517d075f800836859197735dd4425106",
         "switch.primary.container-color": "8b60a51f39edf036ca8c105a5d294f8845a1b8fa",
         "switch.primary.handle-color": "c10da27036f815d5b3776bb2449bd83055a4b141",
         "switch.primary.handle-icon-color": "c84b1264bc46f0594de83610b84dc9513728b9be",
@@ -4782,7 +4882,7 @@
         "switch.tertiary.pressed-state-layer-color": "2f0541d3eff4e31ccddaba500883552bff251245",
         "switch.tertiary.disabled-label-text-color": "3c27d5e3f497aca7ffb497fdba11dc06f5c26751",
         "switch.tertiary.disabled-icon-color": "82537ba1fcac7251403379553428642744aa9a9c",
-        "switch.secondary.container-color": "6d9c3cdb909f4d83eec3ade0b3f356ea9de89530",
+        "switch.secondary.active-container-color": "6d9c3cdb909f4d83eec3ade0b3f356ea9de89530",
         "switch.secondary.handle-color": "fd51ca95cbc887ed643d257934eb58d6ac0648fd",
         "switch.secondary.handle-icon-color": "0fdb26e3fd8923aadd7aac8fceea678efbce8729",
         "switch.secondary.disabled-container-color": "2030c2f30a17e63e6b4a7d92020842c37f815038",
@@ -5229,6 +5329,15 @@
         "radiobutton.disabled-icon-color": "a833c9be127eb029ce9261af66c864dafec9599f",
         "radiobutton.disabled-outline-color": "b1e83922fba3bcc5bfd1aa00ff1e1bef74a6f528",
         "radiobutton.disabled-container-color": "8d973e1d205d51cab9b799a742dc8e7882a744ef",
+        "pagination.pressed-container-color": "f6848c5288713d80585f53e71c46e3194d428d10",
+        "pagination.pressed-label-text-color": "008438d34fa0d6e3619bad2baa95efcfb8a67b8e",
+        "pagination.hover-state-layer-color": "2f4618cf252ce956d0f1c0634d7fbdaf96607505",
+        "pagination.label-text-color": "e9b261ece470701bfc4f7b1b269688546f8e547e",
+        "pagination.label-icon-color": "008438d34fa0d6e3619bad2baa95efcfb8a67b8e",
+        "pagination.hover-label-icon-color-": "828869d6b2d336b88f83f8afeee2ca55966e99f0",
+        "pagination.hover-label-text-color": "bf98c600e147f570e779f77a917cf464bc622eae",
+        "pagination.disabled-label-text-color": "c1e1291aaee4bbdc84bd2044272d563f06af1bd9",
+        "pagination.disabled-container-color": "c6d7517a517d075f800836859197735dd4425106",
         "switch.primary.container-color": "8b60a51f39edf036ca8c105a5d294f8845a1b8fa",
         "switch.primary.handle-color": "c10da27036f815d5b3776bb2449bd83055a4b141",
         "switch.primary.handle-icon-color": "c84b1264bc46f0594de83610b84dc9513728b9be",
@@ -5255,7 +5364,7 @@
         "switch.tertiary.pressed-state-layer-color": "2f0541d3eff4e31ccddaba500883552bff251245",
         "switch.tertiary.disabled-label-text-color": "3c27d5e3f497aca7ffb497fdba11dc06f5c26751",
         "switch.tertiary.disabled-icon-color": "82537ba1fcac7251403379553428642744aa9a9c",
-        "switch.secondary.container-color": "6d9c3cdb909f4d83eec3ade0b3f356ea9de89530",
+        "switch.secondary.active-container-color": "6d9c3cdb909f4d83eec3ade0b3f356ea9de89530",
         "switch.secondary.handle-color": "fd51ca95cbc887ed643d257934eb58d6ac0648fd",
         "switch.secondary.handle-icon-color": "0fdb26e3fd8923aadd7aac8fceea678efbce8729",
         "switch.secondary.disabled-container-color": "2030c2f30a17e63e6b4a7d92020842c37f815038",
