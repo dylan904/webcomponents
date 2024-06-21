@@ -3499,7 +3499,7 @@
         }
       },
       "neutral-variant-container": {
-        "value": "{neutral-variant.90}",
+        "value": "{neutral-variant.95}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
