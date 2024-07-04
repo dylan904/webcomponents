@@ -652,7 +652,7 @@
       "small": {
         "value": {
           "fontFamily": "{plain}",
-          "fontWeight": "{weight.medium}",
+          "fontWeight": "{weight.regular}",
           "lineHeight": "{lineHeights.3}",
           "fontSize": "{fontSize.5}",
           "letterSpacing": "{letterSpacing.3}",
@@ -666,7 +666,7 @@
       "medium": {
         "value": {
           "fontFamily": "{plain}",
-          "fontWeight": "{weight.medium}",
+          "fontWeight": "{weight.regular}",
           "lineHeight": "{lineHeights.4}",
           "fontSize": "{fontSize.6}",
           "letterSpacing": "{letterSpacing.1}",
@@ -680,7 +680,7 @@
       "large": {
         "value": {
           "fontFamily": "{plain}",
-          "fontWeight": "{weight.medium}",
+          "fontWeight": "{weight.regular}",
           "lineHeight": "{lineHeights.5}",
           "fontSize": "{fontSize.7}",
           "letterSpacing": "{letterSpacing.1}",
@@ -1130,7 +1130,7 @@
       "medium": {
         "value": {
           "fontFamily": "{plain}",
-          "fontWeight": "{weight.regular}",
+          "fontWeight": "{weight.medium}",
           "lineHeight": "{lineHeights.7}",
           "fontSize": "{fontSize.9}",
           "letterSpacing": "{letterSpacing.1}",
@@ -1739,15 +1739,15 @@
             "type": "color"
           },
           "pressed-outline-color": {
-            "value": "{secondary.secondary-accent}",
+            "value": "{secondary.inverse-secondary}",
             "type": "color"
           },
           "pressed-label-text-color": {
-            "value": "{secondary.secondary-accent}",
+            "value": "{secondary.inverse-secondary}",
             "type": "color"
           },
           "pressed-icon-color": {
-            "value": "{secondary.secondary-accent}",
+            "value": "{secondary.inverse-secondary}",
             "type": "color"
           },
           "disabled-label-text-color": {
@@ -2017,11 +2017,11 @@
             "type": "color"
           },
           "pressed-label-text-color": {
-            "value": "{secondary.secondary-accent}",
+            "value": "{secondary.inverse-secondary}",
             "type": "color"
           },
           "pressed-icon-color": {
-            "value": "{secondary.secondary-accent}",
+            "value": "{secondary.inverse-secondary}",
             "type": "color"
           },
           "disabled-icon-color": {
@@ -2367,15 +2367,15 @@
             "type": "color"
           },
           "pressed-outline-color": {
-            "value": "{secondary.secondary-accent}",
+            "value": "{secondary.inverse-secondary}",
             "type": "color"
           },
           "pressed-label-text-color": {
-            "value": "{secondary.secondary-accent}",
+            "value": "{secondary.inverse-secondary}",
             "type": "color"
           },
           "pressed-icon-color": {
-            "value": "{secondary.secondary-accent}",
+            "value": "{secondary.inverse-secondary}",
             "type": "color"
           },
           "disabled-label-text-color": {
@@ -3411,11 +3411,11 @@
         "type": "color"
       },
       "inverse-primary": {
-        "value": "{primary.10}",
+        "value": "{primary.100}",
         "type": "color"
       },
-      "on-inverse-primary": {
-        "value": "{primary.90}",
+      "inverse-on-primary": {
+        "value": "{primary.40}",
         "type": "color"
       }
     },
@@ -3515,6 +3515,14 @@
       "secondary-accent": {
         "value": "{secondary.30}",
         "type": "color"
+      },
+      "inverse-secondary": {
+        "value": "{secondary.99}",
+        "type": "color"
+      },
+      "inverse-on-secondary": {
+        "value": "{secondary.40}",
+        "type": "color"
       }
     },
     "tertiary": {
@@ -3613,6 +3621,14 @@
       "tertiary-accent": {
         "value": "{tertiary.30}",
         "type": "color"
+      },
+      "inverse-tertiary": {
+        "value": "{tertiary.99}",
+        "type": "color"
+      },
+      "inverse-on-tertiary": {
+        "value": "{tertiary.40}",
+        "type": "color"
       }
     },
     "neutral-variant": {
@@ -3708,6 +3724,14 @@
       "neutral-variant-accent": {
         "value": "{neutral-variant.20}",
         "type": "color"
+      },
+      "inverse-neutral-variant": {
+        "value": "{neutral-variant.99}",
+        "type": "color"
+      },
+      "inverse-on-neutral-variant": {
+        "value": "{neutral-variant.40}",
+        "type": "color"
       }
     },
     "error": {
@@ -3761,7 +3785,7 @@
         }
       },
       "on-error-fixed-dim": {
-        "value": "{error.30}",
+        "value": "{error.20}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
@@ -3805,6 +3829,14 @@
       },
       "error-accent": {
         "value": "{error.30}",
+        "type": "color"
+      },
+      "inverse-error": {
+        "value": "{error.99}",
+        "type": "color"
+      },
+      "inverse-on-error": {
+        "value": "{error.40}",
         "type": "color"
       }
     },
@@ -3904,6 +3936,14 @@
       "info-accent": {
         "value": "{info.40}",
         "type": "color"
+      },
+      "inverse-info": {
+        "value": "{info.99}",
+        "type": "color"
+      },
+      "inverse-on-info": {
+        "value": "{info.40}",
+        "type": "color"
       }
     },
     "success": {
@@ -3969,6 +4009,20 @@
         "attributes": {
           "root": "sys-color"
         }
+      },
+      "inverse-success": {
+        "value": "{success.99}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
+      "inverse-on-success": {
+        "value": "{success.99}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
       }
     },
     "warning": {
@@ -4030,6 +4084,14 @@
       },
       "warning-accent": {
         "value": "{warning.60}",
+        "type": "color"
+      },
+      "inverse-warning": {
+        "value": "{warning.99}",
+        "type": "color"
+      },
+      "inverse-on-warning": {
+        "value": "{warning.40}",
         "type": "color"
       }
     },
@@ -4523,7 +4585,7 @@
         "primary.disabled-3": "036900432a4228bdb9a8c96529d68100d0afa98d",
         "primary.primary-accent": "fe7c28c1148a0f05621bd0137d15539f9b204b6e",
         "primary.inverse-primary": "9c605f1bb478cc1eb7b61a3b258c36d18d438df6",
-        "primary.on-inverse-primary": "3809cfeb80d0c80ea2e6a9e5b2265c370cbdf4c7",
+        "primary.inverse-on-primary": "3809cfeb80d0c80ea2e6a9e5b2265c370cbdf4c7",
         "secondary.secondary": "33f1afcbf3d89eb2563d629a4415ac49a026a348",
         "secondary.on-secondary": "073cbe1e460efe9067aba8aa479f77fc8d5f2ee7",
         "secondary.secondary-container": "29f254de376cac4a3b9efe7862ae2f05268d2690",
@@ -4539,6 +4601,8 @@
         "secondary.disabled-1": "fe521784470c51e405611c61c2ec59e7f62327e1",
         "secondary.disabled-2": "64eef9bde262e51ee64a025e68e05cbf1f7ff2a6",
         "secondary.secondary-accent": "262f9c008b677774fc2bd931d748c4f9b607b0ab",
+        "secondary.inverse-secondary": "262f9c008b677774fc2bd931d748c4f9b607b0ab",
+        "secondary.inverse-on-secondary": "09aba198ebbc28a6028b8ede7f3e7cd0e34cb458",
         "tertiary.tertiary": "72f0976e77a0b720b85541bb676688fa82210e38",
         "tertiary.on-tertiary": "d6fbf152292873ea324be0f4e830457538542c0b",
         "tertiary.tertiary-container": "e28981dce8b345823e13d645bfe0f28d821584f4",
@@ -4554,6 +4618,8 @@
         "tertiary.disabled-1": "52677e6c4507f31c152942f45edc19f106a5bd0c",
         "tertiary.disabled-2": "5135b3223e30cff22c4f3a42e774b00f95d3e7e0",
         "tertiary.tertiary-accent": "6c4a3117f6b615f3bb8d7885b5af74d919a4ed32",
+        "tertiary.inverse-tertiary": "549d74ce86f4efc8c22febdce1410139dbcb19bd",
+        "tertiary.inverse-on-tertiary": "c244b9cddba4089c0393b645e0e8b1c90c78a03e",
         "neutral-variant.neutral-variant": "a05ddf8855915492cd5ca451b2e3b00f388d8980",
         "neutral-variant.on-neutral-variant": "17a783622e88d2391470d56aadef0104b8e55934",
         "neutral-variant.neutral-variant-container": "d7831d52d09d59cff64f6ef77b20b9bc89777e66",
@@ -4569,6 +4635,8 @@
         "neutral-variant.disabled-1": "11a441dacd2af2ab77ab613fd6eebfe2af0164f7",
         "neutral-variant.disabled-2": "0d989d0e6971b9c979362db2472f74febb844b38",
         "neutral-variant.neutral-variant-accent": "915188d349263f40eddc200980cddc66d093df1c",
+        "neutral-variant.inverse-neutral-variant": "557f078a25c0969308792c2e58d3a85a2057cdb4",
+        "neutral-variant.inverse-on-neutral-variant": "0a06098cf97f264d58fb233489306ec2c286e385",
         "error.error": "78a30a5f719a6ca0b490587dad72b95bf0a04420",
         "error.on-error": "21b4373c34ca8d1128918ec0b28f0baffe809638",
         "error.error-container": "b506e3174a5d4d037c738d9cd6fb34832fde569f",
@@ -4584,6 +4652,8 @@
         "error.disabled-1": "02e4e4904ed1228060c53a3c153bbb1cc3393c9e",
         "error.disabled-2": "5e5805e33b6e034eeffc500cf062f18cbe361b5f",
         "error.error-accent": "68d074b217a6ea5fa284e9e8514106497924ba86",
+        "error.inverse-error": "dab53cca9cf78b70f50d93988780e355da7fa909",
+        "error.inverse-on-error": "18b5dcb784449287a35feb26deb137d33f5a4d31",
         "info.info": "ed7ebd7364af8022f2bd9f5961a9218f501baf96",
         "info.on-info": "8f54ae16461af52b7335dd83f9a3dd409371d1a4",
         "info.info-container": "6aaec460eab4cd91091f9686eef315e54569bf27",
@@ -4599,6 +4669,8 @@
         "info.disabled-1": "a6875c7aa7ceaa385dadf6f6787647b9a1e08750",
         "info.disabled-2": "c89fe3ecb42937396b06966889c22909023052f5",
         "info.info-accent": "e17d6069e4375089e6c04027be187f2056e71e8d",
+        "info.inverse-info": "4ec27f96b7f55520c088a9f72cc459eb2d7b4fc6",
+        "info.inverse-on-info": "a69ce01e5c553c661097333c815d079cce90374f",
         "success.success": "7f57ee8397a427e3e87bc9eec80463ad0a787b7c",
         "success.on-success": "32b4d9e78c90a8c1205fa3baaa6d3ddcac64bc34",
         "success.success-container": "bb460a767a85a4598668e6310dffcb65dc185334",
@@ -4608,6 +4680,8 @@
         "success.success-fixed-dim": "5f66055851330171c4bd6be1efa26b47a4a09c47",
         "success.on-success-fixed-dim": "ca903f7ca29de94fd816524725920bb5312ad7b5",
         "success.on-success-accent": "efb4b0e4c0ee86f184a8b4577c171bd6374f4e9e",
+        "success.inverse-success": "3c71de6e12413cadeb5b230f282b1363633111d5",
+        "success.inverse-on-success": "e3ee508b2a88fbb6ca63e263ca78b1678c135354",
         "warning.warning": "82b84f8ad325aa7efed96a160a81e0a7f8c6bafe",
         "warning.on-warning": "2ad18abb048b1fbdfff2cf03c3d4f539097983ea",
         "warning.warning-container": "f0f9520eeee0dd7e0e5e0f71070ce36b2226ee92",
@@ -4617,6 +4691,8 @@
         "warning.warning-fixed-dim": "80517ae07166a46c95185dbb29fafffa1f82d235",
         "warning.on-warning-fixed-dim": "cdb0f7a8199221ead3c8d2dd2b3da26458a2f353",
         "warning.warning-accent": "c93a9e50959f8f913d5862d65df504c6e862ff12",
+        "warning.inverse-warning": "7076ff9842838e2a2ffe02e1bc538508833a5eba",
+        "warning.inverse-on-warning": "70b476548a2a031927e1752e2a4dbfacdf5257c9",
         "other.shadow": "510e9c0c15d68377ad01823fa36608c26b945ecb",
         "other.outline": "31f237669cdae862fa2eb8ecdcc924ecfcd1a285",
         "other.outline-variant": "1fbbfbdd64ef2405cb691d740342a783765a67d2",
