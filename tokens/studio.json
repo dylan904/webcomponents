@@ -3220,15 +3220,15 @@
   },
   "light/color": {
     "surfaces": {
-      "on-surface": {
-        "value": "{neutral-variant.10}",
+      "surface": {
+        "value": "{neutral-variant.97}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
         }
       },
-      "surface": {
-        "value": "{neutral-variant.97}",
+      "on-surface": {
+        "value": "{neutral-variant.10}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
@@ -3349,7 +3349,7 @@
         }
       },
       "primary-fixed-dim": {
-        "value": "{primary.90}",
+        "value": "{primary.80}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
@@ -3411,7 +3411,7 @@
         "type": "color"
       },
       "inverse-primary": {
-        "value": "{primary.100}",
+        "value": "{primary.99}",
         "type": "color"
       },
       "inverse-on-primary": {
@@ -3470,7 +3470,7 @@
         }
       },
       "on-secondary-fixed-dim": {
-        "value": "{secondary.30}",
+        "value": "{secondary.20}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
@@ -3785,7 +3785,7 @@
         }
       },
       "on-error-fixed-dim": {
-        "value": "{error.20}",
+        "value": "{error.10}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
@@ -3990,14 +3990,14 @@
         }
       },
       "success-fixed-dim": {
-        "value": "{success.20}",
+        "value": "{success.40}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
         }
       },
       "on-success-fixed-dim": {
-        "value": "{success.100}",
+        "value": "{success.20}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
@@ -4018,7 +4018,7 @@
         }
       },
       "inverse-on-success": {
-        "value": "{success.99}",
+        "value": "{success.20}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
@@ -4091,7 +4091,7 @@
         "type": "color"
       },
       "inverse-on-warning": {
-        "value": "{warning.40}",
+        "value": "{warning.30}",
         "type": "color"
       }
     },
