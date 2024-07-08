@@ -1099,8 +1099,8 @@
       },
       "large": {
         "value": {
-          "fontFamily": "{plain}",
-          "fontWeight": "{weight.regular}",
+          "fontFamily": "{brand}",
+          "fontWeight": "{weight.medium}",
           "lineHeight": "{lineHeights.11}",
           "fontSize": "{fontSize.13}",
           "letterSpacing": "{letterSpacing.0}",
@@ -1129,7 +1129,7 @@
       },
       "medium": {
         "value": {
-          "fontFamily": "{plain}",
+          "fontFamily": "{brand}",
           "fontWeight": "{weight.medium}",
           "lineHeight": "{lineHeights.7}",
           "fontSize": "{fontSize.9}",
@@ -4556,8 +4556,8 @@
         "Placeholder.Large": "S:3f59dc9be17188968f3c4db8e88138d4bb010ca2,"
       },
       "$figmaVariableReferences": {
-        "surfaces.on-surface": "935f6580b93ad1aafecf267c32d763966bb518c5",
         "surfaces.surface": "4255bd4b5462ee88d29a3b6c38c514544ce6fc7b",
+        "surfaces.on-surface": "935f6580b93ad1aafecf267c32d763966bb518c5",
         "surfaces.surface-container-low": "b568539fceac6f7b3a52e4876d6309ef3b628c9e",
         "surfaces.surface-container-lowest": "9f0a8d17630b69a86260ea299a2a14fe63e00e6a",
         "surfaces.surface-container": "7ed5b1801dbd50f8a7a9f5b2c1f7087ff6a2cb66",
