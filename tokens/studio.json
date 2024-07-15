@@ -1475,11 +1475,11 @@
             "type": "color"
           },
           "hover-state-layer-color": {
-            "value": "{info.info-low-shade-1}",
+            "value": "{info.info-high-shade-2}",
             "type": "color"
           },
           "pressed-state-layer-color": {
-            "value": "{info.info-low-shade-2}",
+            "value": "{info.info-low-shade-1}",
             "type": "color"
           },
           "disabled-container-color": {
