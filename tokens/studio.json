@@ -1377,6 +1377,71 @@
         ],
         "type": "boxShadow"
       }
+    },
+    "display": {
+      "level-1": {
+        "value": [
+          {
+            "x": "22",
+            "y": "22",
+            "blur": "44",
+            "spread": "0",
+            "color": "rgba(35,44,53,0.04)",
+            "type": "dropShadow"
+          },
+          {
+            "x": "0",
+            "y": "0",
+            "blur": "2",
+            "spread": "0",
+            "color": "rgba(35,44,53,0.4)",
+            "type": "innerShadow"
+          }
+        ],
+        "type": "boxShadow"
+      },
+      "level-3": {
+        "value": [
+          {
+            "x": "33",
+            "y": "33",
+            "blur": "66",
+            "spread": "0",
+            "color": "rgba(35,44,53,0.06)",
+            "type": "dropShadow"
+          },
+          {
+            "x": "0",
+            "y": "0",
+            "blur": "2",
+            "spread": "0",
+            "color": "rgba(35,44,53,0.4)",
+            "type": "innerShadow"
+          }
+        ],
+        "type": "boxShadow"
+      },
+      "level-2": {
+        "value": [
+          {
+            "x": "11",
+            "y": "11",
+            "blur": "22",
+            "spread": "0",
+            "color": "rgba(35,44,53,0.05)",
+            "type": "dropShadow"
+          },
+          {
+            "x": "0",
+            "y": "0",
+            "blur": "2",
+            "spread": "0",
+            "color": "rgba(35,44,53,0.4)",
+            "type": "innerShadow"
+          }
+        ],
+        "type": "boxShadow"
+      }
     }
   },
   "core/components": {
