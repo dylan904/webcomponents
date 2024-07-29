@@ -3942,7 +3942,7 @@
         }
       },
       "on-error-fixed-dim": {
-        "value": "{error.30}",
+        "value": "{error.10}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
@@ -4175,7 +4175,7 @@
         }
       },
       "inverse-on-success": {
-        "value": "{success.20}",
+        "value": "{success.10}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
@@ -4205,7 +4205,7 @@
         }
       },
       "on-warning-container": {
-        "value": "{warning.20}",
+        "value": "{warning.10}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
@@ -4244,7 +4244,7 @@
         "type": "color"
       },
       "inverse-on-warning": {
-        "value": "{warning.30}",
+        "value": "{warning.20}",
         "type": "color"
       },
       "warning-accent": {
