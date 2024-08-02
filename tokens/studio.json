@@ -3392,6 +3392,13 @@
           "root": "sys-color"
         }
       },
+      "on-surface-container": {
+        "value": "{neutral-variant.10}",
+        "type": "color",
+        "attributes": {
+          "root": "sys-color"
+        }
+      },
       "surface": {
         "value": "{neutral-variant.97}",
         "type": "color",
