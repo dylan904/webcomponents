@@ -1964,11 +1964,11 @@
         },
         "primary": {
           "outline-color": {
-            "value": "{other.outline}",
+            "value": "{primary.70}",
             "type": "color"
           },
           "label-text-color": {
-            "value": "{primary.primary}",
+            "value": "{error.error}",
             "type": "color"
           },
           "icon-color": {
@@ -2338,7 +2338,7 @@
             "type": "color"
           },
           "label-text-color": {
-            "value": "{tertiary.on-tertiary-fixed}",
+            "value": "{tertiary.on-tertiary-container}",
             "type": "color"
           },
           "label-icon-color": {
