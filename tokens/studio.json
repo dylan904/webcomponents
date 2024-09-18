@@ -9565,8 +9565,7 @@
         "core/palette": "source",
         "core/typeface": "enabled",
         "core/components": "enabled",
-        "core/dimensions": "enabled",
-        "Theme/Light/color": "disabled"
+        "core/dimensions": "enabled"
       },
       "$figmaStyleReferences": {
         "display condensed.small": "S:994d79a8204e765e5446af37cb570a617d912d81,",
