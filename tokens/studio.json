@@ -3807,7 +3807,7 @@
       }
     }
   },
-  "Theme/Light/color": {
+  "Theme Core/Light/color": {
     "surfaces": {
       "on-surface": {
         "value": "{neutral-variant.10}",
@@ -4743,7 +4743,7 @@
       "type": "border"
     }
   },
-  "Theme/Darkt/color": {
+  "Theme Core/Darkt/color": {
     "surfaces": {
       "on-surface": {
         "value": "{neutral-variant.10}",
@@ -5689,7 +5689,8 @@
         "core/typeface": "enabled",
         "core/components": "enabled",
         "core/dimensions": "enabled",
-        "Theme/Light/color": "enabled"
+        "Theme Core/Light/color": "enabled",
+        "Theme Core/Darkt/color": "disabled"
       },
       "$figmaStyleReferences": {
         "surfaces.surface": "S:31a03494afdd00d470236c723facb00c3c97b686,",
@@ -6484,16 +6485,16 @@
         "pagination.disabled-container-color": "623b77815aba6d15eef33b976dd7502e04b51436",
         "switch.primary.container-color": "98468368ccc9512d428908809fe234cabc20b0e7",
         "switch.primary.handle-color": "c381dfdcf5d0484c007315c3dbe8a382fec8e783",
-        "switch.off.handle-icon-color": "1cec23de00c6ac31df21dcedd6c6f7c59385feef",
-        "switch.off.container-color": "90cb54b77c3986d5154cdd9f3bfd47aa6f19af75",
-        "switch.off.disabled-handle-color": "1f3b1d0364bb38eff3f218c403aaffd358fd7149",
-        "switch.off.handle-color": "ce0bbb3f18d79d2a21f2fa0df0b5c7d3fbbc4a29",
         "switch.primary.handle-icon-color": "22e7cd00b951a54658140cb421e4a7e5056927a4",
         "switch.primary.disabled-container-color": "cd31eb54fdf47701325a0e0ae01f97908150286d",
         "switch.primary.hover-state-layer-color": "670a70d75117376a1f54989bf5c3ed65dcdd453f",
         "switch.primary.pressed-state-layer-color": "439df6a9d73a6ee4a3bf12e9835d31f436f72b61",
         "switch.primary.disabled-label-text-color": "8d0301dd4ba4c211c65547288122374869af54c8",
         "switch.primary.disabled-icon-color": "9c5a9f96ffd62934fda2f52dbe2f1e849bcb60ab",
+        "switch.off.handle-icon-color": "1cec23de00c6ac31df21dcedd6c6f7c59385feef",
+        "switch.off.container-color": "90cb54b77c3986d5154cdd9f3bfd47aa6f19af75",
+        "switch.off.disabled-handle-color": "1f3b1d0364bb38eff3f218c403aaffd358fd7149",
+        "switch.off.handle-color": "ce0bbb3f18d79d2a21f2fa0df0b5c7d3fbbc4a29",
         "switch.neutral-variant.container-color": "478613a1aa4ab30e05cceef10174e9d0a4ac06be",
         "switch.neutral-variant.handle-icon-color": "0384673dc5576cf27901ae842ac0bc9bee7d0fba",
         "switch.neutral-variant.handle-color": "5c461514d9f1fe1cec6d8c187c0c6c29478c2317",
@@ -6567,7 +6568,8 @@
         "core/typeface": "enabled",
         "core/components": "enabled",
         "core/dimensions": "enabled",
-        "Theme/Darkt/color": "enabled"
+        "Theme Core/Light/color": "disabled",
+        "Theme Core/Darkt/color": "enabled"
       },
       "$figmaStyleReferences": {
         "display condensed.small": "S:994d79a8204e765e5446af37cb570a617d912d81,",
@@ -7247,16 +7249,16 @@
         "pagination.disabled-container-color": "623b77815aba6d15eef33b976dd7502e04b51436",
         "switch.primary.container-color": "98468368ccc9512d428908809fe234cabc20b0e7",
         "switch.primary.handle-color": "c381dfdcf5d0484c007315c3dbe8a382fec8e783",
-        "switch.off.handle-icon-color": "1cec23de00c6ac31df21dcedd6c6f7c59385feef",
-        "switch.off.container-color": "90cb54b77c3986d5154cdd9f3bfd47aa6f19af75",
-        "switch.off.disabled-handle-color": "1f3b1d0364bb38eff3f218c403aaffd358fd7149",
-        "switch.off.handle-color": "ce0bbb3f18d79d2a21f2fa0df0b5c7d3fbbc4a29",
         "switch.primary.handle-icon-color": "22e7cd00b951a54658140cb421e4a7e5056927a4",
         "switch.primary.disabled-container-color": "cd31eb54fdf47701325a0e0ae01f97908150286d",
         "switch.primary.hover-state-layer-color": "670a70d75117376a1f54989bf5c3ed65dcdd453f",
         "switch.primary.pressed-state-layer-color": "439df6a9d73a6ee4a3bf12e9835d31f436f72b61",
         "switch.primary.disabled-label-text-color": "8d0301dd4ba4c211c65547288122374869af54c8",
         "switch.primary.disabled-icon-color": "9c5a9f96ffd62934fda2f52dbe2f1e849bcb60ab",
+        "switch.off.handle-icon-color": "1cec23de00c6ac31df21dcedd6c6f7c59385feef",
+        "switch.off.container-color": "90cb54b77c3986d5154cdd9f3bfd47aa6f19af75",
+        "switch.off.disabled-handle-color": "1f3b1d0364bb38eff3f218c403aaffd358fd7149",
+        "switch.off.handle-color": "ce0bbb3f18d79d2a21f2fa0df0b5c7d3fbbc4a29",
         "switch.neutral-variant.container-color": "478613a1aa4ab30e05cceef10174e9d0a4ac06be",
         "switch.neutral-variant.handle-icon-color": "0384673dc5576cf27901ae842ac0bc9bee7d0fba",
         "switch.neutral-variant.handle-color": "5c461514d9f1fe1cec6d8c187c0c6c29478c2317",
@@ -7330,8 +7332,8 @@
       "core/typeface",
       "core/dimensions",
       "core/components",
-      "Theme/Light/color",
-      "Theme/Darkt/color"
+      "Theme Core/Light/color",
+      "Theme Core/Darkt/color"
     ]
   }
 }
