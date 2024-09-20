@@ -4727,7 +4727,7 @@
         }
       },
       "focussed-ring": {
-        "value": "{primary.70}",
+        "value": "{primary.50}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
