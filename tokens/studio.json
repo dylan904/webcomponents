@@ -4743,7 +4743,7 @@
       "type": "border"
     }
   },
-  "Theme Core/Darkt/color": {
+  "Theme Core/Dark/color": {
     "surfaces": {
       "on-surface": {
         "value": "{neutral-variant.10}",
@@ -5689,7 +5689,8 @@
         "core/typeface": "enabled",
         "core/components": "enabled",
         "core/dimensions": "enabled",
-        "Theme Core/Light/color": "enabled"
+        "Theme Core/Light/color": "enabled",
+        "Theme Core/Dark/color": "disabled"
       },
       "$figmaStyleReferences": {
         "surfaces.surface": "S:31a03494afdd00d470236c723facb00c3c97b686,",
@@ -6567,7 +6568,7 @@
         "core/typeface": "enabled",
         "core/components": "enabled",
         "core/dimensions": "enabled",
-        "Theme Core/Darkt/color": "enabled"
+        "Theme Core/Dark/color": "enabled"
       },
       "$figmaStyleReferences": {
         "display condensed.small": "S:994d79a8204e765e5446af37cb570a617d912d81,",
@@ -7331,7 +7332,7 @@
       "core/dimensions",
       "core/components",
       "Theme Core/Light/color",
-      "Theme Core/Darkt/color"
+      "Theme Core/Dark/color"
     ]
   }
 }
