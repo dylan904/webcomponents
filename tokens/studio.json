@@ -5689,8 +5689,7 @@
         "core/typeface": "enabled",
         "core/components": "enabled",
         "core/dimensions": "enabled",
-        "Theme Core/Light/color": "enabled",
-        "Theme Core/Dark/color": "disabled"
+        "Theme Core/Light/color": "enabled"
       },
       "$figmaStyleReferences": {
         "surfaces.surface": "S:31a03494afdd00d470236c723facb00c3c97b686,",
