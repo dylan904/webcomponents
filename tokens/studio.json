@@ -3511,24 +3511,24 @@
       }
     },
     "radiobutton": {
-      "container-color": {
-        "value": "{primary.primary}",
+      "container-border-unselected": {
+        "value": "{input.input-border-default}",
+        "type": "color"
+      },
+      "container-border-selected": {
+        "value": "{primary.primary-accent}",
         "type": "color"
       },
       "label-icon-color": {
-        "value": "{primary.on-primary}",
+        "value": "{primary.primary}",
         "type": "color"
       },
       "hover-state-layer-color": {
-        "value": "{primary.primary-high-shade-2}",
+        "value": "{primary.primary-high-shade-1}",
         "type": "color"
       },
       "pressed-state-layer-color": {
-        "value": "{primary.primary-low-shade-1}",
-        "type": "color"
-      },
-      "disabled-label-text-color": {
-        "value": "{button.outlined-button.neutral-variant.disabled-outline-color}",
+        "value": "{primary.primary-high-shade-2}",
         "type": "color"
       },
       "disabled-icon-color": {
@@ -3536,10 +3536,6 @@
         "type": "color"
       },
       "disabled-outline-color": {
-        "value": "{neutral-variant.disabled-2}",
-        "type": "color"
-      },
-      "disabled-container-color": {
         "value": "{neutral-variant.disabled-2}",
         "type": "color"
       }
@@ -6465,14 +6461,13 @@
         "checkbox.disabled-icon-color": "0501c2cbe2c2b65ea32cc99a5c901eb1ebe5a6af",
         "checkbox.disabled-outline-color": "0cf730c9bfe1ab390e5490991ee33d06bddc4843",
         "checkbox.disabled-container-color": "7887fab2725e1a2862dc0313efba82aa486c0ac8",
-        "radiobutton.container-color": "3a6072b0c3b770c87ae5d643b899155aeb9fc0ca",
+        "radiobutton.container-border-unselected": "3a6072b0c3b770c87ae5d643b899155aeb9fc0ca",
+        "radiobutton.container-border-selected": "d753463c764b01c89355bb0feff472685dfae63f",
         "radiobutton.label-icon-color": "d984e8b456874268881095eb5486d2019fda4afb",
         "radiobutton.hover-state-layer-color": "c3102cc3d4c8358b2febf3d99648500b849b78ba",
         "radiobutton.pressed-state-layer-color": "ba4bab4dbccd020cc82f492deacdb4fe7c6b4295",
-        "radiobutton.disabled-label-text-color": "89e7985057100fb4372dbdebbdc3f1c4dbd00061",
         "radiobutton.disabled-icon-color": "309f3cf9bb17b59807c56a1cfd3d124ddd6a8407",
         "radiobutton.disabled-outline-color": "a186bf30e3fb820ac6a3ab0094586c5986305e0d",
-        "radiobutton.disabled-container-color": "23f1228c9b70fbd748483e85e9d43f642937ab12",
         "pagination.pressed-container-color": "0737ab3ea516fc194ff70399f87d293cbc42c82a",
         "pagination.pressed-label-text-color": "582454667011fa2fc8f705419be9685e9cdd1d75",
         "pagination.hover-state-layer-color": "6768261159ebfe97e96ac791fb7d361695b02ca8",
@@ -7228,14 +7223,13 @@
         "checkbox.disabled-icon-color": "0501c2cbe2c2b65ea32cc99a5c901eb1ebe5a6af",
         "checkbox.disabled-outline-color": "0cf730c9bfe1ab390e5490991ee33d06bddc4843",
         "checkbox.disabled-container-color": "7887fab2725e1a2862dc0313efba82aa486c0ac8",
-        "radiobutton.container-color": "3a6072b0c3b770c87ae5d643b899155aeb9fc0ca",
+        "radiobutton.container-border-unselected": "3a6072b0c3b770c87ae5d643b899155aeb9fc0ca",
+        "radiobutton.container-border-selected": "d753463c764b01c89355bb0feff472685dfae63f",
         "radiobutton.label-icon-color": "d984e8b456874268881095eb5486d2019fda4afb",
         "radiobutton.hover-state-layer-color": "c3102cc3d4c8358b2febf3d99648500b849b78ba",
         "radiobutton.pressed-state-layer-color": "ba4bab4dbccd020cc82f492deacdb4fe7c6b4295",
-        "radiobutton.disabled-label-text-color": "89e7985057100fb4372dbdebbdc3f1c4dbd00061",
         "radiobutton.disabled-icon-color": "309f3cf9bb17b59807c56a1cfd3d124ddd6a8407",
         "radiobutton.disabled-outline-color": "a186bf30e3fb820ac6a3ab0094586c5986305e0d",
-        "radiobutton.disabled-container-color": "23f1228c9b70fbd748483e85e9d43f642937ab12",
         "pagination.pressed-container-color": "0737ab3ea516fc194ff70399f87d293cbc42c82a",
         "pagination.pressed-label-text-color": "582454667011fa2fc8f705419be9685e9cdd1d75",
         "pagination.hover-state-layer-color": "6768261159ebfe97e96ac791fb7d361695b02ca8",
