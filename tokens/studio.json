@@ -3597,7 +3597,7 @@
           "type": "color"
         },
         "hover-state-layer-color": {
-          "value": "{primary.primary-low-shade-1}",
+          "value": "{primary.primary-high-shade-1}",
           "type": "color"
         },
         "pressed-state-layer-color": {
@@ -3649,7 +3649,7 @@
           "type": "color"
         },
         "hover-state-layer-color": {
-          "value": "{neutral-variant.neutral-variant-low-shade-1}",
+          "value": "{neutral-variant.neutral-variant-high-shade-1}",
           "type": "color"
         },
         "pressed-state-layer-color": {
@@ -3695,7 +3695,7 @@
           "type": "color"
         },
         "hover-state-layer-color": {
-          "value": "{tertiary.tertiary-high-shade-1}",
+          "value": "{tertiary.tertiary-low-shade-1}",
           "type": "color"
         },
         "pressed-state-layer-color": {
@@ -3712,7 +3712,7 @@
         }
       },
       "secondary": {
-        "active-container-color": {
+        "container-color": {
           "value": "{secondary.secondary}",
           "type": "color"
         },
@@ -4285,14 +4285,14 @@
         "type": "color"
       },
       "neutral-variant-high-shade-2": {
-        "value": "rgba(46,58,69,0.12)",
+        "value": "rgba(46,58,69,0.15)",
         "type": "color",
         "attributes": {
           "root": "sys-color"
         }
       },
       "neutral-variant-low-shade-1": {
-        "value": "rgba(46,58,69,0.15)",
+        "value": "rgba(46,58,69,0.18)",
         "type": "color",
         "attributes": {
           "root": "sys-color"
@@ -6508,7 +6508,7 @@
         "switch.tertiary.pressed-state-layer-color": "43fde8dae465186339ba3ff6c51637c710a02d67",
         "switch.tertiary.disabled-label-text-color": "0c0e845df867eda50b2a8671bec6f2894e6f6c23",
         "switch.tertiary.disabled-icon-color": "655eb2b94fac67b337b1d984ae3e358dd790143b",
-        "switch.secondary.active-container-color": "94803effe49e2d31ec24f31105882b6ddaeeb13a",
+        "switch.secondary.container-color": "94803effe49e2d31ec24f31105882b6ddaeeb13a",
         "switch.secondary.handle-color": "65a7c6cb4e86fdf9138e6e3485259940e9f8a288",
         "switch.secondary.handle-icon-color": "4b362a091e6cbb78e028d719696cb30ded3c2d97",
         "switch.secondary.disabled-container-color": "bf3ee60d05c1e2821fe2e6a71f7ae3e4513c28b3",
@@ -7270,7 +7270,7 @@
         "switch.tertiary.pressed-state-layer-color": "43fde8dae465186339ba3ff6c51637c710a02d67",
         "switch.tertiary.disabled-label-text-color": "0c0e845df867eda50b2a8671bec6f2894e6f6c23",
         "switch.tertiary.disabled-icon-color": "655eb2b94fac67b337b1d984ae3e358dd790143b",
-        "switch.secondary.active-container-color": "94803effe49e2d31ec24f31105882b6ddaeeb13a",
+        "switch.secondary.container-color": "94803effe49e2d31ec24f31105882b6ddaeeb13a",
         "switch.secondary.handle-color": "65a7c6cb4e86fdf9138e6e3485259940e9f8a288",
         "switch.secondary.handle-icon-color": "4b362a091e6cbb78e028d719696cb30ded3c2d97",
         "switch.secondary.disabled-container-color": "bf3ee60d05c1e2821fe2e6a71f7ae3e4513c28b3",
