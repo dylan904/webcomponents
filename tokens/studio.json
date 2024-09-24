@@ -3633,7 +3633,7 @@
       },
       "neutral-variant": {
         "container-color": {
-          "value": "{neutral-variant.on-neutral-variant}",
+          "value": "{neutral-variant.neutral-variant-container}",
           "type": "color"
         },
         "handle-icon-color": {
@@ -3695,7 +3695,7 @@
           "type": "color"
         },
         "hover-state-layer-color": {
-          "value": "{tertiary.tertiary-low-shade-1}",
+          "value": "{tertiary.tertiary-high-shade-1}",
           "type": "color"
         },
         "pressed-state-layer-color": {
