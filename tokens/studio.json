@@ -2676,7 +2676,7 @@
             "type": "color"
           },
           "disabled-icon-color": {
-            "value": "{error.disabled-1}",
+            "value": "{error.disabled-2}",
             "type": "color"
           }
         },
@@ -3477,7 +3477,7 @@
       }
     },
     "checkbox": {
-      "container-border-unselected-copy": {
+      "container-border-unselected": {
         "value": "{input.input-border-default}",
         "type": "color"
       },
@@ -4706,7 +4706,7 @@
         }
       },
       "border-default-color": {
-        "value": "{neutral-variant.80}",
+        "value": "{neutral-variant.60}",
         "type": "color",
         "attributes": {
           "root": "sys-color"
@@ -12654,6 +12654,7 @@
         "button.tonal-button.pressed-state-layer-opacity": "46b27c32925c521b84d72ca3a5e6ab0aa0a8188b",
         "button.tonal-button.disabled-label-text-opacity": "dce899ee5df17e98ab319549a4e308d8375f2cfd",
         "button.tonal-button.disabled-icon-opacity": "52710a78ba002dead772130ee5b8f39bd6507c38",
+        "checkbox.container-border-unselected": "123fd7d54f0ebcd6165788df1302d45d74f4e19f",
         "radiobutton.container-border-unselected": "3a6072b0c3b770c87ae5d643b899155aeb9fc0ca",
         "switch.off.container-color": "90cb54b77c3986d5154cdd9f3bfd47aa6f19af75",
         "switch.off.handle-color": "ce0bbb3f18d79d2a21f2fa0df0b5c7d3fbbc4a29",
@@ -13416,6 +13417,7 @@
         "button.tonal-button.pressed-state-layer-opacity": "46b27c32925c521b84d72ca3a5e6ab0aa0a8188b",
         "button.tonal-button.disabled-label-text-opacity": "dce899ee5df17e98ab319549a4e308d8375f2cfd",
         "button.tonal-button.disabled-icon-opacity": "52710a78ba002dead772130ee5b8f39bd6507c38",
+        "checkbox.container-border-unselected": "123fd7d54f0ebcd6165788df1302d45d74f4e19f",
         "radiobutton.container-border-unselected": "3a6072b0c3b770c87ae5d643b899155aeb9fc0ca",
         "switch.off.container-color": "90cb54b77c3986d5154cdd9f3bfd47aa6f19af75",
         "switch.off.handle-color": "ce0bbb3f18d79d2a21f2fa0df0b5c7d3fbbc4a29",
