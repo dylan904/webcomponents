@@ -3490,11 +3490,11 @@
         "type": "color"
       },
       "hover-state-layer-color": {
-        "value": "{primary.primary-high-shade-2}",
+        "value": "{primary.primary-high-shade-1}",
         "type": "color"
       },
       "pressed-state-layer-color": {
-        "value": "{primary.primary-low-shade-1}",
+        "value": "{primary.primary-high-shade-2}",
         "type": "color"
       },
       "disabled-label-text-color": {
