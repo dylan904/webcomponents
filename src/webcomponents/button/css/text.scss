@@ -1,0 +1,20 @@
+@import './_common.scss';
+
+@mixin text-button-style($type) {
+    --_outline-color: var(--md-text-button-#{$type}-outline-color);
+    --_label-text-color: var(--md-text-button-#{$type}-label-text-color);
+    --_hover-state-layer-color: var(--md-text-button-#{$type}-hover-state-layer-color);
+    --_pressed-state-layer-color: var(--md-text-button-#{$type}-pressed-state-layer-color);
+    --_disabled-outline-color: var(--md-text-button-#{$type}-disabled-outline-color);
+    --_disabled-label-text-color: var(--md-text-button-#{$type}-disabled-label-text-color);
+    --_disabled-icon-color: var(--md-text-button-#{$type}-disabled-icon-color);
+    --_hover-label-text-color: var(--md-text-button-#{$type}-hover-label-text-color, var(--_label-text-color));
+    --_focus-label-text-color: var(--md-text-button-#{$type}-focus-label-text-color, var(--_label-text-color));
+    --_pressed-label-text-color: var(--md-text-button-#{$type}-press-label-text-color, var(--_label-text-color));
+}
+  
+@each $type in $button-types {
+    :host(.btn--#{$type}) {
+        @include text-button-style($type);
+    }
+}

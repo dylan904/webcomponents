@@ -1,0 +1,27 @@
+$button-types: primary, secondary, tertiary;
+$button-sizes: small, medium, large;
+
+@mixin sized-button-style($size) {
+    --_label-text-size: var(--md-sys-label-#{$size}-size);
+    --_label-text-line-height: var(--md-sys-label-#{$size}-line-height);
+    --_label-text-weight: var(--md-sys-label-#{$size}-weight);
+    --_container-height: var(--md-button-container-height-#{$size});
+    padding-inline-start: var(--md-button-x-space-#{$size})!important;
+    padding-inline-end: var(--md-button-x-space-#{$size})!important;
+}
+  
+@each $size in $button-sizes {
+    :host(.btn--#{$size}) {
+        @include sized-button-style($size);
+    }
+
+    :host(.btn--#{$size}) ::slotted([slot=icon]) {
+        --_icon-size: var(--md-button-icon-size-#{$size});
+        font-size: calc(var(--md-button-icon-size-#{$size}) * 1.5);
+        overflow: visible;
+    }
+}
+
+.label {
+    transition: color 0.3s ease;
+}

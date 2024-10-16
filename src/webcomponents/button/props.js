@@ -1,14 +1,20 @@
-const acceptableTypes = ['primary', 'secondary', 'tertiary', 'danger', 'neutral', 'info']
-const acceptableSizes = ['small', 'medium', 'large']
-const acceptableVariants = ['filled', 'outlined', 'text', 'tonal', 'elevated']
+import propIsValid from '../../utils/propIsValid'
+
+const validTypes = ['primary', 'secondary', 'tertiary', 'danger', 'neutral', 'info']
+const validSizes = ['small', 'medium', 'large']
+const validVariants = ['filled', 'outlined', 'text', 'tonal', 'elevated']
+const validIconPositions = ['leading', 'trailing']
 
 export default {
     accessibilityText: String,
-    disabled: {
-        type: Boolean,
-        default: false
-    },
+    disabled: Boolean,
     faIcon: Array,
+    icon: String,
+    iconPosition: {
+        type: String,
+        default: 'leading',
+        validator: value => propIsValid(value, validIconPositions)
+    },
     id: {
         type: String,
         required: true
@@ -20,34 +26,16 @@ export default {
     size: {
         type: String,
         default: 'medium',
-        validator: (value) => {
-            if (typeof value !== 'string')
-                return false
-                value = value.toLowerCase()
-    
-            return acceptableSizes.includes(value)
-        }
+        validator: value => propIsValid(value, validSizes)
     },
     type: {
         type: String,
         default: 'primary',
-        validator: (value) => {
-            if (typeof value !== 'string')
-                return false
-            value = value.toLowerCase()
-    
-            return acceptableTypes.indexOf(value) !== -1
-        }
+        validator: value => propIsValid(value, validTypes)
     },
     variant: {
         type: String,
         default: 'filled',
-        validator: (value) => {
-            if (typeof value !== 'string')
-                return false
-            value = value.toLowerCase()
-    
-            return acceptableVariants.includes(value)
-        }
+        validator: value => propIsValid(value, validVariants)
     }
 }

@@ -24,30 +24,34 @@
 
         <!-- eslint-disable-next-line vue/no-deprecated-slot-attribute -->
         <component :is="modalComponentName" slot="actions" :method="type === 'form' ? 'form' : null">
-            <md-text-button 
-                v-if="showSecondaryAction"
-                @click="emit('secondary-click')" >
-                {{ secondaryActionText }}
-            </md-text-button>
+            <MButton v-if="showSecondaryAction"
+                variant="text"
+                type="primary"
+                :label="secondaryActionText"
+                @click="emit('secondary-click')"
+            />
 
-            <md-text-button 
-                v-if="type === 'form' && showTertiaryAction"
+            <MButton v-if="type === 'form' && showTertiaryAction"
+                variant="text"
+                type="primary"
+                :label="tertiaryActionText"
                 @click="emit('tertiary-click')"
-                :disabled="disableTertiaryAction">
-                {{ tertiaryActionText }}
-            </md-text-button>
+            />
 
-            <md-text-button 
-                @click="emit('primary-click')"   
-                :disabled="disablePrimaryAction">
-                {{ primaryActionText }}
-            </md-text-button>
+            <MButton
+                variant="text"
+                type="primary"
+                :label="primaryActionText"
+                :disabled="disablePrimaryAction"
+                @click="emit('primary-click')" 
+            />
         </component>
     </bmd-modal>
 </template>
   
 <script setup>
     import propSpecs from '../webcomponents/modal/props.js'
+    import MButton from './MButton.vue'
     
     const props = defineProps(propSpecs)
     const emit = defineEmits(['modal-close', 'primary-click', 'secondary-click', 'tertiary-click', 'close-click', 'update:modelValue', 'before-close-click'])

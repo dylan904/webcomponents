@@ -1,8 +1,8 @@
 <script setup>
-import { ref } from 'vue';
-import BButton from './BButton.vue';
+import { ref } from 'vue'
+import BButton from './BButton.vue'
 import BModal from './BModal.vue'
-import MButton from './MButton-extend.vue'
+import MButton from './MButton.vue'
 import MModal from './MModal.vue'
 
 defineProps({
@@ -40,7 +40,7 @@ const testLitButtonEvent = () => {
 
 <br/><br/>
 
-<MButton variant="filled" type="primary" :size="size" id="lit-button-test" label="MD Filled" @click="testLitButtonEvent" />
+<MButton icon="check" icon-position="leading" variant="filled" type="primary" :size="size" id="lit-button-test" label="MD Filled" @click="testLitButtonEvent" />
 <MButton variant="outlined" type="secondary" :size="size" id="lit-button-test" label="MD Outlined" @click="testLitButtonEvent" />
 <MButton variant="text" type="tertiary" :size="size" id="lit-button-test" label="MD Link" @click="testLitButtonEvent" />
 

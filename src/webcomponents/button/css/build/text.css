@@ -1,0 +1,87 @@
+:host(.btn--small) {
+  --_label-text-size: var(--md-sys-label-small-size);
+  --_label-text-line-height: var(--md-sys-label-small-line-height);
+  --_label-text-weight: var(--md-sys-label-small-weight);
+  --_container-height: var(--md-button-container-height-small);
+  padding-inline-start: var(--md-button-x-space-small) !important;
+  padding-inline-end: var(--md-button-x-space-small) !important;
+}
+
+:host(.btn--small) ::slotted([slot=icon]) {
+  --_icon-size: var(--md-button-icon-size-small);
+  font-size: calc(var(--md-button-icon-size-small) * 1.5);
+  overflow: visible;
+}
+
+:host(.btn--medium) {
+  --_label-text-size: var(--md-sys-label-medium-size);
+  --_label-text-line-height: var(--md-sys-label-medium-line-height);
+  --_label-text-weight: var(--md-sys-label-medium-weight);
+  --_container-height: var(--md-button-container-height-medium);
+  padding-inline-start: var(--md-button-x-space-medium) !important;
+  padding-inline-end: var(--md-button-x-space-medium) !important;
+}
+
+:host(.btn--medium) ::slotted([slot=icon]) {
+  --_icon-size: var(--md-button-icon-size-medium);
+  font-size: calc(var(--md-button-icon-size-medium) * 1.5);
+  overflow: visible;
+}
+
+:host(.btn--large) {
+  --_label-text-size: var(--md-sys-label-large-size);
+  --_label-text-line-height: var(--md-sys-label-large-line-height);
+  --_label-text-weight: var(--md-sys-label-large-weight);
+  --_container-height: var(--md-button-container-height-large);
+  padding-inline-start: var(--md-button-x-space-large) !important;
+  padding-inline-end: var(--md-button-x-space-large) !important;
+}
+
+:host(.btn--large) ::slotted([slot=icon]) {
+  --_icon-size: var(--md-button-icon-size-large);
+  font-size: calc(var(--md-button-icon-size-large) * 1.5);
+  overflow: visible;
+}
+
+.label {
+  transition: color 0.3s ease;
+}
+
+:host(.btn--primary) {
+  --_outline-color: var(--md-text-button-primary-outline-color);
+  --_label-text-color: var(--md-text-button-primary-label-text-color);
+  --_hover-state-layer-color: var(--md-text-button-primary-hover-state-layer-color);
+  --_pressed-state-layer-color: var(--md-text-button-primary-pressed-state-layer-color);
+  --_disabled-outline-color: var(--md-text-button-primary-disabled-outline-color);
+  --_disabled-label-text-color: var(--md-text-button-primary-disabled-label-text-color);
+  --_disabled-icon-color: var(--md-text-button-primary-disabled-icon-color);
+  --_hover-label-text-color: var(--md-text-button-primary-hover-label-text-color, var(--_label-text-color));
+  --_focus-label-text-color: var(--md-text-button-primary-focus-label-text-color, var(--_label-text-color));
+  --_pressed-label-text-color: var(--md-text-button-primary-press-label-text-color, var(--_label-text-color));
+}
+
+:host(.btn--secondary) {
+  --_outline-color: var(--md-text-button-secondary-outline-color);
+  --_label-text-color: var(--md-text-button-secondary-label-text-color);
+  --_hover-state-layer-color: var(--md-text-button-secondary-hover-state-layer-color);
+  --_pressed-state-layer-color: var(--md-text-button-secondary-pressed-state-layer-color);
+  --_disabled-outline-color: var(--md-text-button-secondary-disabled-outline-color);
+  --_disabled-label-text-color: var(--md-text-button-secondary-disabled-label-text-color);
+  --_disabled-icon-color: var(--md-text-button-secondary-disabled-icon-color);
+  --_hover-label-text-color: var(--md-text-button-secondary-hover-label-text-color, var(--_label-text-color));
+  --_focus-label-text-color: var(--md-text-button-secondary-focus-label-text-color, var(--_label-text-color));
+  --_pressed-label-text-color: var(--md-text-button-secondary-press-label-text-color, var(--_label-text-color));
+}
+
+:host(.btn--tertiary) {
+  --_outline-color: var(--md-text-button-tertiary-outline-color);
+  --_label-text-color: var(--md-text-button-tertiary-label-text-color);
+  --_hover-state-layer-color: var(--md-text-button-tertiary-hover-state-layer-color);
+  --_pressed-state-layer-color: var(--md-text-button-tertiary-pressed-state-layer-color);
+  --_disabled-outline-color: var(--md-text-button-tertiary-disabled-outline-color);
+  --_disabled-label-text-color: var(--md-text-button-tertiary-disabled-label-text-color);
+  --_disabled-icon-color: var(--md-text-button-tertiary-disabled-icon-color);
+  --_hover-label-text-color: var(--md-text-button-tertiary-hover-label-text-color, var(--_label-text-color));
+  --_focus-label-text-color: var(--md-text-button-tertiary-focus-label-text-color, var(--_label-text-color));
+  --_pressed-label-text-color: var(--md-text-button-tertiary-press-label-text-color, var(--_label-text-color));
+}
