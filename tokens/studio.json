@@ -2536,11 +2536,11 @@
             "type": "color"
           },
           "disabled-label-text-color": {
-            "value": "{primary.disabled-1}",
+            "value": "{primary.disabled-2}",
             "type": "color"
           },
           "disabled-icon-color": {
-            "value": "{primary.disabled-1}",
+            "value": "{primary.disabled-2}",
             "type": "color"
           }
         },
@@ -2570,7 +2570,7 @@
             "type": "color"
           },
           "disabled-icon-color": {
-            "value": "{secondary.disabled-1}",
+            "value": "{secondary.disabled-2}",
             "type": "color"
           },
           "disabled-label-text-color": {
@@ -3967,7 +3967,7 @@
         "description": "state layer"
       },
       "primary-high-shade-2": {
-        "value": "rgba(3,87,252,0.2)",
+        "value": "rgba(3,87,252,0.3)",
         "type": "color",
         "attributes": {
           "root": "sys-color"
@@ -5689,8 +5689,7 @@
         "core/typeface": "enabled",
         "core/components": "enabled",
         "core/dimensions": "enabled",
-        "Theme/Light/color": "enabled",
-        "Theme/Dark/color": "disabled"
+        "Theme/Light/color": "enabled"
       },
       "$figmaStyleReferences": {
         "surfaces.surface": "S:31a03494afdd00d470236c723facb00c3c97b686,",
@@ -5852,7 +5851,7 @@
         "surfaces.on-surface-variant": "bd9f8e98e15fdf3fd3f4b0f36650fceee921722f",
         "surfaces.surface-tint": "5c7319274876de0fa9890b5fd9802d83a666178f",
         "surfaces.inverse-surface": "f1b21abf3bc9121bf474c2f29262b186eb5984f7",
-        "surfaces.inverse-on-surface": "3a4a2b3b5395df81cbc4032939847543b68838b5",
+        "surfaces.inverse-on-surface": "97834cda69d2bb053aab80b17be1fefba1d4a1b5",
         "surfaces.on-input-container-placeholder-text": "28ab625c702d3c1ecaa4b967a4994c8cd205f4a4",
         "primary.primary": "cb7ceaab55315aacd08aa86abc2535790fc98588",
         "primary.on-primary": "4adfcc79561f35c9e81d0fad6e348749d4db551d",
@@ -6568,7 +6567,6 @@
         "core/typeface": "enabled",
         "core/components": "enabled",
         "core/dimensions": "enabled",
-        "Theme/Light/color": "disabled",
         "Theme/Dark/color": "enabled"
       },
       "$figmaStyleReferences": {
@@ -6616,7 +6614,7 @@
         "surfaces.on-surface-variant": "bd9f8e98e15fdf3fd3f4b0f36650fceee921722f",
         "surfaces.surface-tint": "5c7319274876de0fa9890b5fd9802d83a666178f",
         "surfaces.inverse-surface": "f1b21abf3bc9121bf474c2f29262b186eb5984f7",
-        "surfaces.inverse-on-surface": "3a4a2b3b5395df81cbc4032939847543b68838b5",
+        "surfaces.inverse-on-surface": "97834cda69d2bb053aab80b17be1fefba1d4a1b5",
         "surfaces.on-input-container-placeholder-text": "28ab625c702d3c1ecaa4b967a4994c8cd205f4a4",
         "primary.primary": "cb7ceaab55315aacd08aa86abc2535790fc98588",
         "primary.on-primary": "4adfcc79561f35c9e81d0fad6e348749d4db551d",
